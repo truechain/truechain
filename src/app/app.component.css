@@ -1,0 +1,15 @@
+app-header-mobile {
+    display: none;
+}
+
+@media(max-width: 767px) {
+    app-header {
+        display: none;
+    }
+    app-header-sticky {
+        display: none;
+    }
+    app-header-mobile {
+        display: block;
+    }
+}

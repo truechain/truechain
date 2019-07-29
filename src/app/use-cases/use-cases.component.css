@@ -1,0 +1,21 @@
+/* Use Cases section CSS */
+
+.use-cases-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.use-case {
+    padding: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.use-case h4 {
+    margin-bottom: 30px;
+}
+
+.title-content {
+    text-align: center;
+    margin-bottom: 60px;
+}

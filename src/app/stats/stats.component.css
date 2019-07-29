@@ -1,0 +1,24 @@
+/* CSS for Stats section */
+
+/* Genereal styles */
+.stats-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.stats-container {
+    padding: 16px;
+    border: 1px #000 solid;
+    border-radius: 15px;
+    text-align: center;
+    transition-duration: .5s;
+}
+.stats-container:hover {
+    background-color: #000;
+    transition-duration: .5s;
+
+}
+.stats-container:hover .stats-content h3,
+.stats-container:hover .stats-content p{
+    color: #fff;
+    transition-duration: .5s;
+}

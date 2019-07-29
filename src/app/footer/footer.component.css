@@ -1,0 +1,73 @@
+/* Footer styles */
+
+/* General seciton styles */
+.footer {
+    background: #000 center no-repeat;
+}
+h3 {
+    margin-top: 0;
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Footer top styles */
+.footer-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.back-to-top {
+    margin-top: -45px;
+    margin-bottom: 60px;
+}
+.back-to-top a {
+    border: 2px #fff solid;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    transition-duration: .5s;
+}
+.back-to-top a:hover {
+    color: #fff;
+    background-color: #000;
+    transition-duration: .5s;
+}
+.social-media-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; 
+}
+
+.social-media-row a {
+    margin: 15px;
+    background: #ffc0c0;
+    border: #ffc0c0 1px solid;
+    padding: 15px;
+    transition-duration: .5s;
+}
+.social-media-row a:hover {
+    background: rgb(29, 29, 29);
+    color:#fff;
+    border-color: #fff;
+    transition-duration: .3s;
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+    background-color: #fff;
+    text-align: center;
+}
+.footer-bottom p {
+    color: #000;
+}
+.footer-bottom-content {
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

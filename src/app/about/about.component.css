@@ -1,0 +1,22 @@
+/* About section CSS */
+
+.about-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about-image img{
+    max-width: 300px;
+}
+
+.about-text h2 {
+    margin-bottom: 40px;
+}
+
+.about-text button {
+    color: #000;
+    margin-top: 30px;
+}
+.about-text :hover {
+    color: #fff;
+}

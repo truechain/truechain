@@ -1,0 +1,14 @@
+/* What section CSS */
+
+.what-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.what-video video{
+    max-width: 300px;
+}
+
+.what-text h2 {
+    margin-bottom: 40px;
+}

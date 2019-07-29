@@ -1,0 +1,40 @@
+/* CSS for Sticky Header */
+
+/* General Styles */
+.header-section {
+    position: fixed;
+    z-index: 1;
+    background: #fff no-repeat center;
+    padding: 0px 0 0px 0;
+}
+.header-nav { 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Logo styles */
+
+.logo img {
+    max-height: 100px;
+}
+.logo span {
+    font-size: 20px;
+    color: #252932;
+}
+
+/* Navigation styles */
+.nav {
+    border-bottom: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-tabs li a {
+    color: #252932;
+}
+.nav-tabs li:hover a {
+    border-bottom: none;
+    border-radius: 5px;
+    color:  rgb(71, 169, 255);
+    background-color: #252932;
+    transition-duration: .3s;
+}
