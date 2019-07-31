@@ -33,7 +33,7 @@
     justify-content: space-around;
 }
 
-/* Hidden mobile meny styles */
+/* Hidden mobile menu styles */
 
 #header-mobile-subsection {
     background-color: #acacac;
@@ -43,7 +43,7 @@
     color: #252932;
 }
 .mobile-menu-toggle.active i{
-    color: rgb(71, 169, 255);
+    color: #203260;
 }
 .mobile-menu {
     text-align: center;
@@ -53,5 +53,10 @@
     display: block;
     padding: 10px 0px 10px 0px;
     border-bottom: #000 solid 1px;
+    color: #203260;
+    background-color: #F3F5F7; 
+}
+.mobile-menu a:first-child {
+    border-top: #000 solid 1px;
 }
 

@@ -1,8 +1,8 @@
 /* Why section CSS */
 
 .why-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .why-container {
@@ -19,13 +19,34 @@
 .why-content p {
     margin-top: 30px;
 }
+.why-content .why-icon {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px black solid;
+    transition-duration: .5s;
+}
 .why-item:hover {
     background-color: #000;
     transition-duration: .5s;
-
 }
 .why-item:hover .why-content h3,
-.why-item:hover .why-content p{
+.why-item:hover .why-content p,
+.why-item:hover .why-content i{
     color: #fff;
     transition-duration: .5s;
+}
+.why-item:hover .why-icon {
+    border-color: #fff;
+    background-color: #203260;
+    transition-duration: .5s;
+}
+
+@media(max-width: 991px) {
+    .why-item {
+        margin-bottom: 30px;
+    }
+    .why-item.last{
+        margin-bottom: 0px;
+    }
 }

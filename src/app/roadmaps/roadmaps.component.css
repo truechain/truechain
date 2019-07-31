@@ -1,8 +1,13 @@
 /* Roadmap section CSS */
 
 .roadmaps-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.roadmaps-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .roadmap-item {
@@ -10,11 +15,25 @@
     max-width: 500px;
 }
 
-.roadmap h3 {
+.roadmap-text h3 {
     margin-bottom: 30px;
 }
 
 .title-content {
     text-align: center;
     margin-bottom: 60px;
+}
+
+.icon-container {
+    border: 1px solid #000;
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #203260;
+    margin-top: 20px;
+}
+.icon-container h3 {
+    margin: auto;
+    color: #fff;
+  
 }

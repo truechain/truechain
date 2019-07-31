@@ -1,8 +1,8 @@
 /* Use Cases section CSS */
 
 .use-cases-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .use-case {
@@ -13,6 +13,7 @@
 }
 .use-case h4 {
     margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .title-content {

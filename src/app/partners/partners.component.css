@@ -1,8 +1,14 @@
 /* Partners section CSS */
 
 .partners-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.partners-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .partner-item {
@@ -11,8 +17,9 @@
     text-align: center;
 }
 .partner-item img{
-    width: 100px;
+    width: 200px;
     height: auto;
+    box-shadow: 10px 10px 15px grey;
 }
 
 

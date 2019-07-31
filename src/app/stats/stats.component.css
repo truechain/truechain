@@ -2,8 +2,8 @@
 
 /* Genereal styles */
 .stats-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .stats-container {
     padding: 16px;
@@ -11,9 +11,10 @@
     border-radius: 15px;
     text-align: center;
     transition-duration: .5s;
+    opacity: 0;
 }
 .stats-container:hover {
-    background-color: #000;
+    background-color: #203260;
     transition-duration: .5s;
 
 }
@@ -21,4 +22,10 @@
 .stats-container:hover .stats-content p{
     color: #fff;
     transition-duration: .5s;
+}
+
+@media(max-width: 767px) {
+    .stats-container {
+        margin-bottom: 30px;
+    }
 }

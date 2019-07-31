@@ -2,17 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Truechain Website</title>
+  <title>初链TrueChain－Next Generation Public Blockchain with Hybrid Consensus.</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 </head>
 <body>
   <app-root></app-root>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('li a , .hero-content > a, .about-text > a').click(function (e) {
+          e.preventDefault();
+          var target = $(this.hash);
+          $('html, body').animate({
+              scrollTop: target.offset().top - 98
+          }, 800);
+          return false;
+      });
+    });
+  </script>
+  <script>
+      $(function() {
+        $('.logo > a , .back-to-top > a').click(function (e) {
+            e.preventDefault();
+            var target = $(this.hash);
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+      });
+    </script>
 </body>
 </html>

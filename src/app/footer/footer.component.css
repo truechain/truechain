@@ -2,9 +2,9 @@
 
 /* General seciton styles */
 .footer {
-    background: #000 center no-repeat;
+    background: #203260 center no-repeat;
 }
-h3 {
+h3, h4 {
     margin-top: 0;
     color: #fff;
 }
@@ -20,14 +20,15 @@ img {
 /* Footer top styles */
 .footer-top {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 .back-to-top {
     margin-top: -45px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .back-to-top a {
-    border: 2px #fff solid;
+    border: 2px #000 solid;
+    background-color: #fff;
     padding: 15px;
     padding-top: 25px;
     padding-bottom: 20px;
@@ -35,27 +36,99 @@ img {
 }
 .back-to-top a:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #203260;
+    border-color: #000;
     transition-duration: .5s;
 }
+.back-to-top i {
+    color: #000;
+}
+.back-to-top a:hover i {
+    color: #fff;
+}
+
+
+/* Social media styles */
 .social-media-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; 
+    justify-content: flex-start; 
 }
 
 .social-media-row a {
-    margin: 15px;
-    background: #ffc0c0;
-    border: #ffc0c0 1px solid;
+    margin-right: 30px;
+    border: #000 2px solid;
     padding: 15px;
     transition-duration: .5s;
 }
 .social-media-row a:hover {
-    background: rgb(29, 29, 29);
+    background: #000;
     color:#fff;
     border-color: #fff;
     transition-duration: .3s;
+}
+.social-media-row i {
+    color: #fff;
+}
+
+.social-header {
+    padding-bottom: 30px;
+}
+
+.social-header img{
+    width: 170px;
+    height: auto;
+    margin-top: -8px;
+}
+.social-header span{
+    color: #fff;
+}
+
+
+/* Tech guide styles */
+.tech-guides {
+    padding-left: 100px;
+    border-left: 1px #fff solid;
+}
+
+.app-content {
+    margin-bottom: 30px;
+}
+
+
+
+.app-buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin-left: 0px;
+}
+.app-buttons a {
+    margin-right: 30px;
+}
+.app-buttons button{
+    border-color: #000;
+    width: 85px;
+}
+.app-buttons button:hover {
+    border-color: #fff;
+}
+.mining-buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin-left: 0px;
+}
+.mining-buttons a {
+    margin-right: 30px;
+}
+.mining-buttons button {
+    border-color: #000;
+    border-width: 2px;
+    width: 80px;
+}
+.mining-buttons button:hover {
+    border-color: #fff;
 }
 
 /* Footer bottom styles */
@@ -63,11 +136,66 @@ img {
     background-color: #fff;
     text-align: center;
 }
-.footer-bottom p {
+.footer-bottom span, .footer-bottom p {
     color: #000;
 }
 .footer-bottom-content {
-    padding-top: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+@media(max-width: 1199px) {
+    .social-media {
+        margin-bottom: 50px;
+    }
+    .social-header {
+        text-align: center;
+    }
+    .social-media-row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .social-media-row a{
+        margin-top: 10px;
+    }
+    .tech-guides {
+        border-left: none;
+        padding-left: 0;
+    }
+    .tech-guides h4 {
+        margin-bottom: 30px;
+    }
+    .app-content {
+        text-align: center;
+    }
+    .app-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .app-button a {
+        margin-top: 10px;
+    }
+    .mining-content {
+        text-align: center;
+    }
+    .mining-buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .mining-buttons a {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-bottom-content .row {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .footer-bottom-content .row:last-child div{
+        margin-top: 15px;
+    }
 }

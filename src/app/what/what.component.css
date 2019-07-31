@@ -1,14 +1,29 @@
 /* What section CSS */
 
 .what-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
+.what-video {
+    float: right;
+    max-width: 650px;
+}
 .what-video video{
-    max-width: 300px;
+    width: 100%;
+    box-shadow: 10px 10px 15px grey;
 }
 
 .what-text h2 {
     margin-bottom: 40px;
+}
+
+@media(max-width: 991px) {
+    .what-text {
+        margin-bottom: 40px;
+    }
+    .col-lg-7{
+        display: flex;
+        justify-content: center;
+    }
 }

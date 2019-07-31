@@ -16,6 +16,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { RoadmapsComponent } from './roadmaps/roadmaps.component';
 import { PartnersComponent } from './partners/partners.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
