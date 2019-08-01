@@ -36,11 +36,15 @@
 .hero-content {
     position: absolute; 
     top: 30%; 
-    left: 0; 
-    width: 100%;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-content img {
     max-width: 200px;
+    pointer-events: none;
 }
 h1, p {
     color: #fff;

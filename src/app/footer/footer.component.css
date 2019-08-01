@@ -78,7 +78,9 @@ img {
 .social-header img{
     width: 170px;
     height: auto;
-    margin-top: -8px;
+    margin-top: -10px;
+    padding-right: 5px;
+    pointer-events: none;
 }
 .social-header span{
     color: #fff;
@@ -156,6 +158,8 @@ img {
     }
     .social-media-row a{
         margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .tech-guides {
         border-left: none;
@@ -172,8 +176,13 @@ img {
         flex-flow: row wrap;
         justify-content: center;
     }
-    .app-button a {
+    .app-buttons a {
         margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .app-buttons a:first-child {
+        margin-left: 0px;
     }
     .mining-content {
         text-align: center;
@@ -185,6 +194,11 @@ img {
     }
     .mining-buttons a {
         margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .mining-buttons a:first-child {
+        margin-left: 0px;
     }
 }
 
