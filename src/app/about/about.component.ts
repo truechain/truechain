@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService, element: ElementRef) { 
+    this.appService.aboutElement = element;
+  }
 
   ngOnInit() {
   }

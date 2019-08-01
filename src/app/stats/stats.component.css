@@ -11,7 +11,7 @@
     border-radius: 15px;
     text-align: center;
     transition-duration: .5s;
-    opacity: 0;
+    visibility: hidden;
 }
 .stats-container:hover {
     background-color: #203260;
@@ -24,6 +24,7 @@
     transition-duration: .5s;
 }
 
+/* mobile responsiveness */
 @media(max-width: 767px) {
     .stats-container {
         margin-bottom: 30px;

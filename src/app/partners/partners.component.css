@@ -4,13 +4,15 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
+.title-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
 .partners-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-
 .partner-item {
     padding: 15px;
     max-width: 500px;
@@ -20,10 +22,4 @@
     width: 200px;
     height: auto;
     box-shadow: 10px 10px 15px grey;
-}
-
-
-.title-content {
-    text-align: center;
-    margin-bottom: 60px;
 }

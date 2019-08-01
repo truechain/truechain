@@ -1,5 +1,6 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, AfterViewInit, ElementRef } from '@angular/core';
 import { trigger, style, state, transition, animate } from '@angular/animations';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-header',
@@ -31,30 +32,24 @@ import { trigger, style, state, transition, animate } from '@angular/animations'
       state('active', style({
         'opacity': '0'
       }))
-    ]),
-    trigger('navState', [
-      state('inactive', style({
-        'color' : '#fff',
-        'background-color' : 'rgba(0,0,0,0)'
-      })), 
-      state('active', style({
-        'color': '#252932'
-      }))
     ])
   ]
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements AfterViewInit{
 
-  // Indicates the state of the header. When active, the header displays
- state = 'inactive';
+  // Indicates the state of the header. When active, the header displays certain styles
+  state = 'inactive';
 
-  constructor() { }
+  currentActive: number = 0;
 
-  ngOnInit() {
+  constructor(private appService: AppService) { }
+
+  ngAfterViewInit() { 
   }
 
   // Hostlister dynamically tracks the window scroll position. 
   // Below a certain point, this will switch the state from 'active' to 'inactive' and vise versa.
+  // Also, this will highlight the current section in the navbar.
   @HostListener ('window:scroll', ['$event'])
     onWindowScroll($event: any): void {
       const componentPosition = 1;
@@ -66,6 +61,27 @@ export class HeaderComponent implements OnInit {
       else {
         this.state = 'inactive'
       }
+  
+      if (scrollPosition >= this.appService.homeOffset && scrollPosition < this.appService.whyOffset) {
+        this.currentActive = 1;
+      } else if (scrollPosition >= this.appService.whyOffset && scrollPosition < this.appService.whatOffset) {
+        this.currentActive = 2;
+      } else if (scrollPosition >= this.appService.whatOffset && scrollPosition < this.appService.aboutOffset) {
+        this.currentActive = 3;
+      } else if (scrollPosition >= this.appService.aboutOffset && scrollPosition < this.appService.useCasesOffset) {
+        this.currentActive = 4;
+      } else if (scrollPosition >= this.appService.useCasesOffset && scrollPosition < this.appService.achievementsOffset) {
+        this.currentActive = 5;
+      } else if (scrollPosition >= this.appService.achievementsOffset && scrollPosition < this.appService.roadmapOffset) {
+        this.currentActive = 6;
+      } else if (scrollPosition >= this.appService.roadmapOffset && scrollPosition < this.appService.partnersOffset) {
+        this.currentActive = 7;
+      } else if (scrollPosition >= this.appService.partnersOffset) {
+        this.currentActive = 8;
+      } else {
+        this.currentActive = 0;
+      }
+      
     }
 
 }

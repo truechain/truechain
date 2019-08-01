@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { AppService } from '../app.service';
 declare var particlesJS: any;
 
 @Component({
@@ -22,7 +23,7 @@ declare var particlesJS: any;
           style({
             transform: 'translateY(50px)', 
             opacity: 0}),
-          animate('500ms .7s', style({transform: 'translateY(0)', opacity: 1}))
+          animate('400ms .7s', style({transform: 'translateY(0)', opacity: 1}))
         ])
       ]
     ),
@@ -30,9 +31,9 @@ declare var particlesJS: any;
       'enterParagraph', [
         transition(':enter', [
           style({
-            transform: 'translateY(50px)', 
+            transform: 'translateY(30px)', 
             opacity: 0}),
-          animate('500ms 1s', style({transform: 'translateY(0)', opacity: 1}))
+          animate('400ms .8s', style({transform: 'translateY(0)', opacity: 1}))
         ])
       ]
     ),
@@ -50,11 +51,13 @@ declare var particlesJS: any;
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService, element: ElementRef) { 
+    this.appService.homeElement = element;
+  }
 
   ngOnInit() {
     //Loads the particle effects from the particle.js library
-    particlesJS.load('particles-js', '../assets/particles.json');
+    particlesJS.load('particles-js', 'http://clarkeglobal.co/truechain/assets/particles.json');
   }
 
 }

@@ -4,6 +4,10 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.title-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
 .roadmaps-container {
     display: flex;
     flex-flow: row wrap;
@@ -18,12 +22,6 @@
 .roadmap-text h3 {
     margin-bottom: 30px;
 }
-
-.title-content {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
 .icon-container {
     border: 1px solid #000;
     border-radius: 50px;

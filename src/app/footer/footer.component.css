@@ -90,13 +90,9 @@ img {
     padding-left: 100px;
     border-left: 1px #fff solid;
 }
-
 .app-content {
     margin-bottom: 30px;
 }
-
-
-
 .app-buttons {
     display: flex;
     flex-flow: row;
@@ -112,6 +108,7 @@ img {
 }
 .app-buttons button:hover {
     border-color: #fff;
+    transition-duration: .3s;
 }
 .mining-buttons {
     display: flex;
@@ -129,6 +126,7 @@ img {
 }
 .mining-buttons button:hover {
     border-color: #fff;
+    transition-duration: .3s;
 }
 
 /* Footer bottom styles */

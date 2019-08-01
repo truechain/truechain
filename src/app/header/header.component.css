@@ -37,5 +37,24 @@
 .nav-tabs li:hover a {
     border-bottom: none;
     border-radius: 5px;
-    transition-duration: .3s;
+}
+.nav-tabs li:hover a{ 
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+}
+.nav-tabs li a:link{ 
+    background-color: rgba(0, 0, 0, 0);
+}
+.active {
+    color: rgb(87, 134, 182) !important;
+}
+.navTop {
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+}
+.navNotTop {
+    color: #252932;
+}
+li:hover a.navNotTop {
+    color: rgb(87, 134, 182) !important;
 }
