@@ -4,9 +4,10 @@
 .header-section {
     position: fixed;
     z-index: 2;
-    background: #fff no-repeat center;
+    background: rgba(0, 0, 0, 0) no-repeat center;
     padding: 0px 0 0px 0;
 }
+
 .header-nav { 
     padding-top: 30px;
     padding-bottom: 30px;
@@ -24,7 +25,6 @@
     position: absolute;
     padding-top: 5px;
     padding-bottom: 5px;
-    pointer-events: none;
 }
 .logo span {
     font-size: 20px;
@@ -66,3 +66,4 @@
 li:hover a.navNotTop {
     color: rgb(87, 134, 182) !important;
 }
+

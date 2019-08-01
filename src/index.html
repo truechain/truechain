@@ -18,7 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
     $(function() {
-      $('li a , .hero-content > a, .about-text > a').click(function (e) {
+      $('.nav-tabs > li, .nav-tabs > li > a').click(function (e) {
           e.preventDefault();
           var target = $(this.hash);
           $('html, body').animate({
@@ -28,6 +28,28 @@
       });
     });
   </script>
+  <script>
+      $(function() {
+        $('.hero-content > a, .about-text > a').click(function (e) {
+          if(window.innerWidth <= 991) {
+            e.preventDefault();
+            var target = $(this.hash);
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800);
+            return false;
+          }
+          else {
+            e.preventDefault();
+            var target = $(this.hash);
+            $('html, body').animate({
+                scrollTop: target.offset().top - 98
+            }, 800);
+            return false;
+          }
+        });
+      });
+    </script>
   <script>
       $(function() {
         $('.logo > a , .back-to-top > a').click(function (e) {

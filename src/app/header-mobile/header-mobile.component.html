@@ -1,28 +1,30 @@
 <!--Mobile Header-->
 <header class="header-section full-width" id="header-mobile">
-  <div class="container" id="header-mobile-main">
-    <div class="row">
-      <!--Logo section-->
-      <div class="col-xs-9 logo-container">
-        <div class="logo"> 
-          <a href="#">
-            <img src="http://clarkeglobal.co/truechain/assets/truechain-logo.png">
-          </a>
+  <div class="wrap" id="header-mobile-main">
+    <div class="container">
+      <div class="row">
+        <!--Logo section-->
+        <div class="col-xs-9 logo-container">
+          <div class="logo"> 
+            <a href="#">
+              <img src="http://clarkeglobal.co/truechain/assets/truechain-logo-black.png">
+            </a>
+          </div>
         </div>
-      </div>
-      <!--Navigation section-->
-      <div class="col-xs-3 header-nav">
+        <!--Navigation section-->
+        <div class="col-xs-3 header-nav">
           <div class="navigation">
             <a class="mobile-menu-toggle" (click)="toggleMobileMenu()" [ngClass]="mobileToggle ? 'active' : 'inactive' ">
               <i class="fa fa-bars fa-2x"></i>
             </a>
           </div>
         </div>
+      </div>
     </div>
   </div>
   <!--Hidden navigation menu. Activated when the nav icon is toggled-->
   <ng-container *ngIf="mobileToggle">
-    <div class="container full-width" id="header-mobile-subsection">
+    <div class="container full-width" id="header-mobile-subsection" [@mobileMenuState]>
       <div class="mobile-menu">
         <a href="http://clarkeglobal.co/truechain/#why"><strong>Why TrueChain?</strong></a>
         <a href="http://clarkeglobal.co/truechain/#what"><strong>What are we?</strong></a>

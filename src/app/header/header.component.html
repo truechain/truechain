@@ -1,5 +1,6 @@
 <!--Main header that is fixed to the top of the page-->
-<header class="header-section full-width" id="header" [@divState]='state'>
+<header class="header-section full-width" id="header">
+  <div class="wrap" [@divState]='state'>
     <div class="container" id="header-main">
       <div class="row">
         <!--Logo section-->
@@ -23,31 +24,32 @@
                 </li>
                 <li>
                   <a href="#what" [ngClass]="{'active': currentActive === 3, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  [ngClass]="state == active ? 'navTop' : 'navNotTop'"><strong>What are we?</strong></a>
+                  ><strong>What are we?</strong></a>
                 </li>
                 <li>
                   <a href="#about" [ngClass]="{'active': currentActive === 4, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  [ngClass]="state == active ? 'navTop' : 'navNotTop'"><strong>About us</strong></a>
+                  ><strong>About us</strong></a>
                 </li>
                 <li>
                   <a href="#use-cases" [ngClass]="{'active': currentActive === 5, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  [ngClass]="state == active ? 'navTop' : 'navNotTop'"><strong>Use cases</strong></a>
+                  ><strong>Use cases</strong></a>
                 </li>
                 <li>
                   <a href="#achievements" [ngClass]="{'active': currentActive === 6, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  [ngClass]="state == active ? 'navTop' : 'navNotTop'"><strong>Achievements</strong></a>
+                  ><strong>Achievements</strong></a>
                 </li>
                 <li>
                   <a href="#roadmap" [ngClass]="{'active': currentActive === 7, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  [ngClass]="state == active ? 'navTop' : 'navNotTop'"><strong>Roadmap</strong></a>
+                  ><strong>Roadmap</strong></a>
                 </li>
                 <li>
                   <a href="#partners" [ngClass]="{'active': currentActive === 8, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  [ngClass]="state == active ? 'navTop' : 'navNotTop'"><strong>Partners</strong></a>
+                  ><strong>Partners</strong></a>
                 </li>
               </ul>
             </div>
           </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>

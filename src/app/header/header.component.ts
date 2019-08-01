@@ -8,14 +8,14 @@ import { AppService } from '../app.service';
   styleUrls: ['./header.component.css'],
   animations:[ 
     trigger('divState', [
-      state('inactive', style({
-        'background-color': 'rgba(0, 0, 0, 0)'
-      })), 
       state('active', style({
         'background-color': 'rgba(255, 255, 255, 1)'
       })),
-      transition('inactive => active', animate('400ms ease-in')),
-      transition('active => inactive', animate('400ms ease-out'))
+      state('inactive', style({
+        'background-color': 'rgba(255, 255, 255, 0)'
+      })),
+      transition('active => inactive', animate('400ms ease-in-out')),
+      transition('inactive => active', animate('400ms ease-in'))
     ]),
     trigger('logoBlackState', [
       state('inactive', style({

@@ -4,11 +4,14 @@
 /* General styles */
 .header-section {
     position: absolute;
+    z-index: 1;
+}
+.wrap {
     z-index: 2;
     background: #fff no-repeat center;
-    padding: 0px 30px 0px 30px;
-
+    width: 100%;
 }
+
 .header-nav { 
     padding-top: 30px;
     padding-bottom: 30px;
@@ -17,8 +20,15 @@
 }
 
 /* Logo styles */
+.logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .logo img {
-    max-height: 100px;
+    max-height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .logo span {
@@ -38,6 +48,8 @@
 #header-mobile-subsection {
     background-color: #acacac;
     padding: 0;
+    z-index: -10;
+    position: absolute;
 }
 .mobile-menu-toggle i {
     color: #252932;
@@ -60,3 +72,8 @@
     border-top: #000 solid 1px;
 }
 
+@media(max-width: 767px) {
+    #header-mobile-main .row {
+        padding: 0px 30px 0px 30px;
+    }
+}
