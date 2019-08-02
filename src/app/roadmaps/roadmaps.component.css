@@ -4,6 +4,9 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.row:before, row:after {
+    display: inline-block;
+}
 .title-content {
     text-align: center;
     margin-bottom: 60px;
@@ -13,12 +16,10 @@
     flex-flow: row wrap;
     justify-content: center;
 }
-
 .roadmap-item {
     padding: 15px;
     max-width: 500px;
 }
-
 .roadmap-text h3 {
     margin-bottom: 30px;
 }
@@ -33,5 +34,4 @@
 .icon-container h3 {
     margin: auto;
     color: #fff;
-  
 }
