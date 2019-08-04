@@ -57,7 +57,8 @@ export class HeroComponent implements OnInit {
 
   ngOnInit() {
     //Loads the particle effects from the particle.js library
-    particlesJS.load('particles-js', 'http://clarkeglobal.co/truechain/assets/particles.json');
+    //particlesJS.load('particles-js', 'http://clarkeglobal.co/truechain/assets/particles.json');
+    particlesJS.load('particles-js', '../assets/particles.json');
   }
 
 }

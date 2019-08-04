@@ -16,6 +16,7 @@ import { RoadmapsComponent } from './roadmaps/roadmaps.component';
 import { PartnersComponent } from './partners/partners.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { CountUpModule } from 'countup.js-angular2';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    CountUpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

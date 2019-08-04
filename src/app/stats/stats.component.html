@@ -1,10 +1,10 @@
-<div class="stats-section" id="stats">
+<div class="stats-section" id="stats" #stats>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
                 <div class="stats-container" animateOnScroll animationName="animated fadeInUp">
                     <div class="stats-content">
-                        <h3>1200-1900 TPS</h3>
+                        <h3><span [countUp]="statOneVal" [options]="customOptions" [reanimateOnClick]='false'>0</span> TPS</h3>
                         <p>Faster than ETH and more secure than EOS/TRON</p>
                     </div>
                 </div>
@@ -12,7 +12,7 @@
             <div class="col-sm-3">
                 <div class="stats-container" animateOnScroll animationName="animated fadeInUp animated-delay-1">
                     <div class="stats-content">
-                        <h3>$60 million</h3>
+                        <h3>$<span [countUp]="statTwoVal" [options]="customOptions" [reanimateOnClick]='false'>0</span> million</h3>
                         <p>USD trading volume per day in xx of xx</p>
                     </div>
                 </div>
@@ -20,7 +20,7 @@
             <div class="col-sm-3">
                 <div class="stats-container" animateOnScroll animationName="animated fadeInUp animated-delay-2">
                     <div class="stats-content">
-                        <h3>250,000+</h3>
+                        <h3><span [countUp]="statThreeVal" [options]="customOptions" [reanimateOnClick]='false'>0</span>+</h3>
                         <p>Token holders worldwide in xx of xx</p>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
             <div class="col-sm-3">
                 <div class="stats-container" animateOnScroll animationName="animated fadeInUp animated-delay-3">
                     <div class="stats-content">
-                        <h3>3,000+</h3>
+                        <h3><span [countUp]="statFourVal" [options]="customOptions" [reanimateOnClick]='false'>0</span>+</h3>
                         <p>Developers in global TRUE tech community</p>
                     </div>
                 </div>
