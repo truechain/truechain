@@ -62,22 +62,24 @@ export class HeaderComponent implements AfterViewInit{
         this.state = 'inactive'
       }
   
-      if (scrollPosition >= this.appService.homeOffset && scrollPosition < this.appService.whyOffset) {
+      if (scrollPosition >= this.appService.homeOffset && scrollPosition < this.appService.whatOffset) {
         this.currentActive = 1;
-      } else if (scrollPosition >= this.appService.whyOffset && scrollPosition < this.appService.whatOffset) {
-        this.currentActive = 2;
       } else if (scrollPosition >= this.appService.whatOffset && scrollPosition < this.appService.aboutOffset) {
+        this.currentActive = 2;
+      } else if (scrollPosition >= this.appService.aboutOffset && scrollPosition < this.appService.whyOffset) {
         this.currentActive = 3;
-      } else if (scrollPosition >= this.appService.aboutOffset && scrollPosition < this.appService.useCasesOffset) {
+      } else if (scrollPosition >= this.appService.whyOffset && scrollPosition < this.appService.useCasesOffset) {
         this.currentActive = 4;
       } else if (scrollPosition >= this.appService.useCasesOffset && scrollPosition < this.appService.caseStudiesOffset) {
         this.currentActive = 5;
-      } else if (scrollPosition >= this.appService.achievementsOffset && scrollPosition < this.appService.roadmapOffset) {
+      } else if (scrollPosition >= this.appService.caseStudiesOffset && scrollPosition < this.appService.roadmapOffset) {
         this.currentActive = 6;
       } else if (scrollPosition >= this.appService.roadmapOffset && scrollPosition < this.appService.partnersOffset) {
         this.currentActive = 7;
-      } else if (scrollPosition >= this.appService.partnersOffset) {
+      } else if (scrollPosition >= this.appService.partnersOffset && scrollPosition < this.appService.downloadOffset) {
         this.currentActive = 8;
+      } else if (scrollPosition >= this.appService.downloadOffset) {
+        this.currentActive = 9;
       } else {
         this.currentActive = 0;
       }

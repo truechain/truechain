@@ -2,14 +2,17 @@
 
 .what-section {
     padding-top: 100px;
+    padding-bottom: 100px;
     overflow: hidden;
 }
 .what-image {
-    max-width: 350px;
+    max-width: 650px;
+    max-height: 650px;
 }
 
 .what-image img{
     width: 100%;
+    height: auto;
     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,1));
     background: transparent;
 }
@@ -18,7 +21,7 @@
     right: 0;
     padding-right: 0;
     max-width: 450px;
-    padding-top: 80px;
+
 }
 .what-text .app-button img {
     width: 150px;

@@ -1,0 +1,77 @@
+/* download section CSS */
+
+.download-section {
+    padding-top: 30px;
+    overflow: hidden;
+}
+.download-image {
+    max-width: 350px;
+}
+
+.download-image img{
+    width: 100%;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,1));
+    background: transparent;
+}
+
+.download-text {
+    right: 0;
+    padding-right: 0;
+    max-width: 450px;
+    padding-top: 80px;
+}
+.download-text .app-button img {
+    width: 150px;
+    height: auto;
+    transition-duration: .3s;
+}
+.download-text .app-button button {
+    width: 150px;
+    height: auto;
+    transition-duration: .3s;
+    padding: 10px;
+}
+.download-text .app-button i {
+    padding-right: 10px;
+}
+.download-text .app-button span {
+    position: relative;
+    bottom: 5px;
+}
+.download-text .app-button {
+    width: fit-content;
+    height: fit-content;
+    margin-right: 30px;
+}
+.download-text .app-button:hover img{
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+.download-text .download-buttons{
+    margin-top: 50px;
+}
+
+.download-text h2 {
+    margin-bottom: 40px;
+}
+
+/* mobile responsiveness */
+@media(max-width: 991px) {
+    .col-md-6 {
+        display: flex !important;
+        flex-flow: column wrap !important;
+        justify-content: center !important;
+        align-content: center !important;
+        padding-left: 20px;
+    }
+    .download-text {
+        padding-top: 0px !important;
+        margin-bottom: 40px;
+    }
+    .app-button img{
+        margin-bottom: 10px;
+    }
+    .download-buttons {
+        text-align: center;
+    }
+}

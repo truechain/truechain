@@ -4,7 +4,7 @@
 .footer {
     background: #203260 center no-repeat;
 }
-h3, h4 {
+h3, h4, h5 {
     margin-top: 0;
     color: #fff;
 }
@@ -19,8 +19,8 @@ img {
 
 /* Footer top styles */
 .footer-top {
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 .back-to-top {
     margin-top: -45px;
@@ -47,16 +47,42 @@ img {
     color: #fff;
 }
 
+/* Footer Header */
+
+.footer-header {
+    text-align: center;
+}
+
+.footer-header img{
+    width: 250px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-right: 8px;
+    pointer-events: none;
+}
+
 
 /* Social media styles */
+.social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.social-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center 
+}
 .social-media-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; 
+    justify-content: center; 
 }
 
 .social-media-row a {
-    margin-right: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
     border: #000 2px solid;
     padding: 15px;
     transition-duration: .5s;
@@ -73,62 +99,66 @@ img {
 
 .social-header {
     padding-bottom: 30px;
+    text-align: center;
 }
-
-.social-header img{
-    width: 170px;
-    height: auto;
-    margin-top: -8px;
-    padding-right: 8px;
-    pointer-events: none;
-}
-.social-header span{
-    color: #fff;
-}
-
 
 /* Tech guide styles */
 .tech-guides {
-    padding-left: 100px;
-    border-left: 1px #fff solid;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
+
+.tech-guides h5 {
+    padding-bottom: 20px
+}
+
+/*
 .app-content {
     margin-bottom: 30px;
-}
-.app-buttons {
     display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    margin-left: 0px;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center !important;
 }
 .app-buttons a {
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .app-buttons button{
     border-color: #000;
     width: 85px;
+    height: 85px;
 }
 .app-buttons button:hover {
     border-color: #fff;
     transition-duration: .3s;
-}
+}*/
 .mining-buttons {
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
-    margin-left: 0px;
+}
+.mining-content {
+    text-align: center !important;
 }
 .mining-buttons a {
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .mining-buttons button {
     border-color: #000;
     border-width: 2px;
     width: 80px;
+    height: 80px;
 }
 .mining-buttons button:hover {
     border-color: #fff;
     transition-duration: .3s;
+}
+p {
+    font-size: 14px !important;
+    margin-bottom: 0;
 }
 
 /* Footer bottom styles */
@@ -141,7 +171,7 @@ img {
 }
 .footer-bottom-content {
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 @media(max-width: 1199px) {

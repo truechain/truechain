@@ -8,9 +8,7 @@ import { AppService } from '../app.service';
 })
 export class AchievementsComponent implements OnInit {
 
-  constructor(private appService: AppService, element: ElementRef) { 
-    this.appService.achievementsElement = element;
-  }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
   }

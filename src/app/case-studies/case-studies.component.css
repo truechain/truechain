@@ -18,7 +18,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+.case-study h2 {
+    color: #fff !important;
+}
 .case-study h4 {
     margin-bottom: 30px;
     font-weight: 700;
+    color: #fff !important;
 }
