@@ -17,6 +17,8 @@ import { PartnersComponent } from './partners/partners.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { CountUpModule } from 'countup.js-angular2';
+import { CaseStudiesComponent } from './case-studies/case-studies.component';
+import { DownloadComponent } from './download/download.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { CountUpModule } from 'countup.js-angular2';
     UseCasesComponent,
     AchievementsComponent,
     RoadmapsComponent,
-    PartnersComponent
+    PartnersComponent,
+    CaseStudiesComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,

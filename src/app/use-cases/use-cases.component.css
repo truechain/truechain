@@ -8,13 +8,27 @@
     text-align: center;
     margin-bottom: 60px;
 }
+.use-cases-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
 .use-case {
     padding: 15px;
-    max-width: 500px;
+    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
 }
 .use-case h4 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: 700;
+}
+.icon-box {
+    margin-bottom: 20px;
+}
+
+.use-cases-button {
+    text-align: center !important;
+    margin-top: 40px;
 }

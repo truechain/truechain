@@ -70,7 +70,7 @@ export class HeaderComponent implements AfterViewInit{
         this.currentActive = 3;
       } else if (scrollPosition >= this.appService.aboutOffset && scrollPosition < this.appService.useCasesOffset) {
         this.currentActive = 4;
-      } else if (scrollPosition >= this.appService.useCasesOffset && scrollPosition < this.appService.achievementsOffset) {
+      } else if (scrollPosition >= this.appService.useCasesOffset && scrollPosition < this.appService.caseStudiesOffset) {
         this.currentActive = 5;
       } else if (scrollPosition >= this.appService.achievementsOffset && scrollPosition < this.appService.roadmapOffset) {
         this.currentActive = 6;

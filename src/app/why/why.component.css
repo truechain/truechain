@@ -5,27 +5,35 @@
     padding-bottom: 100px;
 }
 .title-content {
-    text-align: center;
+    text-align: left;
 }
 /* why-container */
 .why-container {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 /* why-item */
 .why-item {
     padding: 15px;
-    border: 2px #000 solid;
+    padding-left: 0;
+
 }
 .why-content p {
     margin-top: 30px;
 }
 .why-content .why-icon {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px black solid;
     transition-duration: .5s;
 }
+h2, h3 {
+    font-weight: bold;
+}
+
+.why-button {
+    padding-top: 20px;
+}
+/*
 .why-item:hover {
     background-color: #000;
     transition-duration: .5s;
@@ -41,11 +49,11 @@
     background-color: #203260;
     transition-duration: .5s;
 }
-
+*/
 /* mobile responsiveness */
 @media(max-width: 991px) {
     .why-item {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     .why-item.last{
         margin-bottom: 0px;

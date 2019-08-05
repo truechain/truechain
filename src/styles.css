@@ -21,6 +21,12 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
 .btn-primary {
   background-color: rgba(0, 0, 0 , 0) ;
   border-radius: 0;
@@ -33,6 +39,22 @@ h1 {
   border-radius: 0;
   border-width: 2px;
   border-color: #fff;
+  transition-duration: 1s;
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0 , 0) ;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #000;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  background-color: #203260;
+  color: #fff;
+  border-radius: 0;
+  border-width: 2px;
   transition-duration: 1s;
 }
 
