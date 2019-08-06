@@ -14,6 +14,7 @@
 h1, h2, h3, h4, h5, h6, p, span, li, a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -24,13 +25,17 @@ h1 {
 
 h2 {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000;
 }
-
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
 h4 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 700;
   color: #000;
 }
 
@@ -41,7 +46,7 @@ h5 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -51,6 +56,7 @@ p {
   border-radius: 0;
   border-width: 2px;
   border-color: #203260;
+  transition-duration: .5s;
 }
 
 .btn-primary:hover {
@@ -58,7 +64,7 @@ p {
   border-radius: 0;
   border-width: 2px;
   border-color: #fff;
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .btn-secondary {
@@ -67,6 +73,7 @@ p {
   border-width: 2px;
   border-color: #000;
   color: #000;
+  transition-duration: .5s;
 }
 
 .btn-secondary:hover {
@@ -74,7 +81,7 @@ p {
   color: #fff;
   border-radius: 0;
   border-width: 2px;
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .background-primary {

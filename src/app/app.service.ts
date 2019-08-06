@@ -33,13 +33,13 @@ export class AppService {
   // sets the offsets to the respective sections
   getOffset() {
     this.homeOffset = this.homeElement.nativeElement.offsetTop;
-    this.whatOffset = this.whatElement.nativeElement.offsetTop;
-    this.aboutOffset = this.aboutElement.nativeElement.offsetTop;
-    this.whyOffset = this.whyElement.nativeElement.offsetTop;
-    this.useCasesOffset = this.useCasesElement.nativeElement.offsetTop;
-    this.caseStudiesOffset = this.caseStudiesElement.nativeElement.offsetTop;
-    this.roadmapOffset = this.roadmapElement.nativeElement.offsetTop;
-    this.partnersOffset = this.partnersElement.nativeElement.offsetTop;
-    this.downloadOffset = this.downloadElement.nativeElement.offsetTop;
+    this.whatOffset = this.whatElement.nativeElement.offsetTop - 99;
+    this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 99;
+    this.whyOffset = this.whyElement.nativeElement.offsetTop - 88;
+    this.useCasesOffset = this.useCasesElement.nativeElement.offsetTop - 88;
+    this.caseStudiesOffset = this.caseStudiesElement.nativeElement.offsetTop - 88;
+    this.roadmapOffset = this.roadmapElement.nativeElement.offsetTop - 88;
+    this.partnersOffset = this.partnersElement.nativeElement.offsetTop - 88;
+    this.downloadOffset = this.downloadElement.nativeElement.offsetTop - 88;
   }
 }
