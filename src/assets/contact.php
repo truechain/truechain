@@ -13,11 +13,11 @@ switch($_SERVER['REQUEST_METHOD']){
 
         $params = json_decode($json);
 
-        $name = $params->name;
-        $email = $params->email;
-        $company = $params->company;
-        $phone = $params->phone;
-        $message = $params->message;
+        $name = test_input($params->name);
+        $email = test_input($params->email);
+        $company = test_input($params->company);
+        $phone = test_input($params->phone);
+        $message = test_input($params->message);
         $mailBody = "Name: " . $name . "\n" . "Email: " . $email . "\n" . 
         "Company: " . $company  . "\n" . "Phone: " . $phone . "\n" . "\n" . "Message: " . "\n" . $message 
         . "\n" . "\n" . "-- \n This e-mail was sent from a contact form on the TrueChain website";
@@ -32,4 +32,10 @@ switch($_SERVER['REQUEST_METHOD']){
         header("Allow: POST", true, 405);
         exit;
 }
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
 ?>
