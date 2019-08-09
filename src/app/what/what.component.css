@@ -5,12 +5,12 @@
     padding-bottom: 100px;
     overflow: hidden;
 }
-.what-image {
-    max-width: 650px;
-    max-height: 650px;
+.what-video {
+    max-width: 600px;
+    height: auto;
 }
 
-.what-image img{
+.what-video video{
     width: 100%;
     height: auto;
     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,1));
@@ -21,7 +21,6 @@
     right: 0;
     padding-right: 0;
     max-width: 450px;
-
 }
 .what-text .what-button {
     width: 150px;
@@ -58,12 +57,13 @@
     .what-text {
         padding-top: 0px !important;
         margin-bottom: 40px;
+        max-width: 1000px;
     }
-    .app-button img{
-        margin-bottom: 10px;
+    .what-video {
+        max-width: 1000px;
+  
     }
     .what-buttons {
-        text-align: center;
         margin-right: -25px;
     }
 }
