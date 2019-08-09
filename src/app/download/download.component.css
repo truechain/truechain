@@ -68,6 +68,27 @@
         padding-top: 0px !important;
         margin-bottom: 40px;
     }
+    .app-button .btn{
+        margin-bottom: 20px;
+    }
+    .download-buttons {
+        text-align: center;
+        margin-right: -25px;
+    }
+}
+
+@media(max-width: 991px) {
+    .col-md-6 {
+        display: flex !important;
+        flex-flow: column wrap !important;
+        justify-content: center !important;
+        align-content: center !important;
+        padding-left: 20px;
+    }
+    .download-text {
+        padding-top: 0px !important;
+        margin-bottom: 40px;
+    }
     .app-button img{
         margin-bottom: 10px;
     }

@@ -20,10 +20,10 @@ img {
 /* Footer top styles */
 .footer-top {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 .back-to-top {
-    margin-top: -45px;
+    margin-top: -30px;
     margin-bottom: 30px;
 }
 .back-to-top a {
@@ -239,5 +239,8 @@ p {
     }
     .footer-bottom-content .row:last-child div{
         margin-top: 15px;
+    }
+    .footer-bottom .col-sm-3 {
+        margin-top: 0px !important;
     }
 }

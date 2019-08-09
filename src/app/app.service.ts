@@ -28,6 +28,9 @@ export class AppService {
   public partnersOffset: number = null;
   public downloadOffset: number = null;
 
+  // Boolean for opening contact form modal
+  public contactForm: boolean = false;
+
   constructor() { }
 
   // sets the offsets to the respective sections
@@ -35,11 +38,23 @@ export class AppService {
     this.homeOffset = this.homeElement.nativeElement.offsetTop;
     this.whatOffset = this.whatElement.nativeElement.offsetTop - 99;
     this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 99;
-    this.whyOffset = this.whyElement.nativeElement.offsetTop - 88;
-    this.useCasesOffset = this.useCasesElement.nativeElement.offsetTop - 88;
-    this.caseStudiesOffset = this.caseStudiesElement.nativeElement.offsetTop - 88;
-    this.roadmapOffset = this.roadmapElement.nativeElement.offsetTop - 88;
-    this.partnersOffset = this.partnersElement.nativeElement.offsetTop - 88;
-    this.downloadOffset = this.downloadElement.nativeElement.offsetTop - 88;
+    this.whyOffset = this.whyElement.nativeElement.offsetTop - 99;
+    this.useCasesOffset = this.useCasesElement.nativeElement.offsetTop - 99;
+    this.caseStudiesOffset = this.caseStudiesElement.nativeElement.offsetTop - 99;
+    this.roadmapOffset = this.roadmapElement.nativeElement.offsetTop - 99;
+    this.partnersOffset = this.partnersElement.nativeElement.offsetTop - 99;
+    this.downloadOffset = this.downloadElement.nativeElement.offsetTop + 360;
+  }
+
+  contactAppear() {
+    this.contactForm = true;
+    console.log("Contact Appear");
+    
+  }
+
+  contactHide() {
+    this.contactForm = false;
+    console.log("Contact Hidden");
+    
   }
 }

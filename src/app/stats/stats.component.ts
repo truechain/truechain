@@ -18,7 +18,7 @@ export class StatsComponent implements OnInit, AfterViewInit{
   statFourVal: number;
 
 
-  private customOptions: CountUpOptions = {
+  public customOptions: CountUpOptions = {
     startVal: 0,
     decimalPlaces: 0,
     duration: 2.5,

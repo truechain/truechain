@@ -29,6 +29,8 @@
 }
 .about-image img {
     max-width: 500px;
+    height: 400px;
+    object-fit: cover;
     box-shadow: 10px 10px 15px grey;
 }
 

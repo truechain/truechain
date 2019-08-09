@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
       });
     //Smooth scrolling for buttons with offset for header
     $(function() {
-        $('.hero-content > a, .about-text > a').click(function (e) {
+        $('.hero-content > a').click(function (e) {
         if(window.innerWidth <= 991) {
             e.preventDefault();
             var target = $(this.hash);

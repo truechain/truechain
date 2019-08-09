@@ -13,7 +13,7 @@ declare var particlesJS: any;
         transition(':enter', [
           style({
             opacity: 0}),
-          animate('500ms .3s', style({opacity: 1}))
+          animate('500ms 1.7s ease-in', style({opacity: 1}))
         ])
       ]
     ),
@@ -23,7 +23,7 @@ declare var particlesJS: any;
           style({
             transform: 'translateY(50px)', 
             opacity: 0}),
-          animate('400ms .7s', style({transform: 'translateY(0)', opacity: 1}))
+          animate('400ms 1.1s ease-in', style({transform: 'translateY(0)', opacity: 1}))
         ])
       ]
     ),
@@ -33,7 +33,7 @@ declare var particlesJS: any;
           style({
             transform: 'translateY(30px)', 
             opacity: 0}),
-          animate('400ms .8s', style({transform: 'translateY(0)', opacity: 1}))
+          animate('400ms 1.2s ease-in', style({transform: 'translateY(0)', opacity: 1}))
         ])
       ]
     ),
@@ -43,7 +43,18 @@ declare var particlesJS: any;
           style({
             transform: 'translateY(50px)', 
             opacity: 0}),
-          animate('500ms 1s', style({transform: 'translateY(0)', opacity: 1}))
+          animate('500ms 1.4s ease-in', style({transform: 'translateY(0)', opacity: 1}))
+        ])
+      ]
+    ),
+    trigger(
+      'enterVideo', [
+        transition(':enter', [
+          style({
+            width : '100%',
+            transform: 'translateX(200px)', 
+            opacity: 0}),
+          animate('500ms .7s ease-out', style({transform: 'translateX(0)', opacity: 1, width : '100%'}))
         ])
       ]
     )
@@ -57,8 +68,8 @@ export class HeroComponent implements OnInit {
 
   ngOnInit() {
     //Loads the particle effects from the particle.js library
-    //particlesJS.load('particles-js', 'http://clarkeglobal.co/truechain/assets/particles.json');
-    particlesJS.load('particles-js', '../assets/particles.json');
+    particlesJS.load('particles-js', 'http://clarkeglobal.co/truechain/assets/particles.json');
+    //particlesJS.load('particles-js', '../assets/particles.json');
   }
 
 }

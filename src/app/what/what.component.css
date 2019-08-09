@@ -23,17 +23,17 @@
     max-width: 450px;
 
 }
-.what-text .app-button img {
+.what-text .what-button {
     width: 150px;
     height: auto;
     transition-duration: .3s;
 }
-.what-text .app-button {
+.what-text .what-button {
     width: fit-content;
     height: fit-content;
     margin-right: 30px;
 }
-.what-text .app-button:hover img{
+.what-text .what-button:hover {
     transform: scale(1.1);
     transition-duration: .3s;
 }
@@ -64,5 +64,6 @@
     }
     .what-buttons {
         text-align: center;
+        margin-right: -25px;
     }
 }

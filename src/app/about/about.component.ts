@@ -15,4 +15,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  getContact() {
+    this.appService.contactAppear();
+  }
 }

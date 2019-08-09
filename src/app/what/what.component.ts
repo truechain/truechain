@@ -15,4 +15,7 @@ export class WhatComponent implements OnInit {
   ngOnInit() {
   }
 
+  getContact() {
+    this.appService.contactAppear();
+  }
 }

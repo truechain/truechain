@@ -72,12 +72,18 @@ p {
 
 /* Hero Video Styles */
 
+.col-lg-7 {
+    width: 100% !important;
+}
+
 .hero-video {
     float: right;
     max-width: 750px;
+    width: 100% !important;
 }
 .hero-video video{
     width: 100%;
+    height: auto;
     box-shadow: 10px 10px 15px #000;
 }
 
@@ -97,6 +103,11 @@ p {
     .hero-content {
         text-align: center;
         margin-bottom: 50px;
+    }
+    .hero-video video{
+        width: 100%;
+        height: auto;
+        box-shadow: 10px 10px 15px #000;
     }
 }
 

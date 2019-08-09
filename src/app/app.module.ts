@@ -19,6 +19,10 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { CountUpModule } from 'countup.js-angular2';
 import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { DownloadComponent } from './download/download.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from "@angular/common/http";
+import { ClickOutsideModule } from 'ng-click-outside';
 
 @NgModule({
   declarations: [
@@ -36,13 +40,17 @@ import { DownloadComponent } from './download/download.component';
     RoadmapsComponent,
     PartnersComponent,
     CaseStudiesComponent,
-    DownloadComponent
+    DownloadComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     AnimateOnScrollModule.forRoot(),
-    CountUpModule
+    CountUpModule,
+    HttpClientModule,
+    ClickOutsideModule
   ],
   providers: [],
   bootstrap: [AppComponent]

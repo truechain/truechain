@@ -21,33 +21,45 @@ h1 {
   font-size: 60px;
   font-weight: bold;
   color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 
 h2 {
   font-size: 40px;
   font-weight: 700;
   color: #000;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
 }
 h3 {
   font-size: 22px;
   font-weight: 700;
   color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 h4 {
   font-size: 22px;
   font-weight: 700;
   color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 
 h5 {
   font-size: 20px;
   font-weight: bold;
   color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
   font-size: 17px;
   font-weight: 300;
+  -webkit-font-smoothing: antialiased  !important;
+}
+
+li {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased  !important;
 }
 
 
@@ -122,10 +134,24 @@ p {
 }
 
 .animated-delay-5 {
-  animation-delay: .3s;
+  animation-delay: .5s;
   -webkit-animation-delay: .5s;
   -moz-animation-delay: .5s;
   -o-animation-delay: .5s;
+}
+
+.animated-delay-6 {
+  animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+  -moz-animation-delay: .6s;
+  -o-animation-delay: .6s;
+}
+
+.animated-delay-7 {
+  animation-delay: .7s;
+  -webkit-animation-delay: .7s;
+  -moz-animation-delay: .7s;
+  -o-animation-delay: .7s;
 }
 
 .hide-on-init {

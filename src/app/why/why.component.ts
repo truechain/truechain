@@ -15,4 +15,7 @@ export class WhyComponent implements OnInit {
   ngOnInit() {
   }
 
+  getContact() {
+    this.appService.contactAppear();
+  }
 }
