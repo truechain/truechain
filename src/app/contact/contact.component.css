@@ -23,22 +23,13 @@
     width: 90%;
   }
   
-  #myModal .modal-content img {
-    width: 300px;
-    height: auto;
-    object-fit: contain;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
   /* The Close Button */
   #myModal .close {
     color: #fff !important;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    margin-right: -20px;
+    margin-right: -5px;
   }
   
   #myModal .close:hover,
@@ -63,6 +54,10 @@
     max-width: 200px;
     margin-bottom: -50px;
     height: auto;
+    margin-right: -15px;
+    width: 300px;
+    object-fit: contain;
+    text-align: center;
   }
 
    /* Contact Form */
