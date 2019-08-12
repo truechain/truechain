@@ -47,6 +47,10 @@ export class HeaderComponent implements AfterViewInit{
   ngAfterViewInit() { 
   }
 
+  getContact() {
+    this.appService.contactAppear();
+  }
+
   // Hostlister dynamically tracks the window scroll position. 
   // Below a certain point, this will switch the state from 'active' to 'inactive' and vise versa.
   // Also, this will highlight the current section in the navbar.
@@ -76,10 +80,8 @@ export class HeaderComponent implements AfterViewInit{
         this.currentActive = 6;
       } else if (scrollPosition >= this.appService.roadmapOffset && scrollPosition < this.appService.partnersOffset) {
         this.currentActive = 7;
-      } else if (scrollPosition >= this.appService.partnersOffset && scrollPosition < this.appService.downloadOffset) {
+      } else if (scrollPosition >= this.appService.partnersOffset) {
         this.currentActive = 8;
-      } else if (scrollPosition >= this.appService.downloadOffset) {
-        this.currentActive = 9;
       } else {
         this.currentActive = 0;
       }

@@ -66,4 +66,7 @@
 li:hover a.navNotTop {
     color: rgb(87, 134, 182) !important;
 }
+.contact-btn {
+    cursor: pointer;
+}
 

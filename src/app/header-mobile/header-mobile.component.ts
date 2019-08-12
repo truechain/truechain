@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-header-mobile',
@@ -31,7 +32,7 @@ export class HeaderMobileComponent implements OnInit {
   // toggle for mobile meny. True displays it. False hides it.
   mobileToggle: boolean = false;
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
   }
@@ -39,6 +40,9 @@ export class HeaderMobileComponent implements OnInit {
   // Toggles the hidden mobile menu by switching the mobileToggle state.
   toggleMobileMenu() {
     this.mobileToggle = !this.mobileToggle;
+  }
 
+  getContact() {
+    this.appService.contactAppear();
   }
 }

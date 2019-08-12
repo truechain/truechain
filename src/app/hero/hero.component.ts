@@ -13,7 +13,7 @@ declare var particlesJS: any;
         transition(':enter', [
           style({
             opacity: 0}),
-          animate('500ms 1.7s ease-in', style({opacity: 1}))
+          animate('500ms 0.3s ease-in', style({opacity: 1}))
         ])
       ]
     ),
@@ -23,7 +23,7 @@ declare var particlesJS: any;
           style({
             transform: 'translateY(50px)', 
             opacity: 0}),
-          animate('400ms 1.1s ease-in', style({transform: 'translateY(0)', opacity: 1}))
+          animate('400ms 0.8s ease-out', style({transform: 'translateY(0)', opacity: 1}))
         ])
       ]
     ),
@@ -33,7 +33,7 @@ declare var particlesJS: any;
           style({
             transform: 'translateY(30px)', 
             opacity: 0}),
-          animate('400ms 1.2s ease-in', style({transform: 'translateY(0)', opacity: 1}))
+          animate('400ms 0.9s ease-out', style({transform: 'translateY(0)', opacity: 1}))
         ])
       ]
     ),
@@ -43,21 +43,10 @@ declare var particlesJS: any;
           style({
             transform: 'translateY(50px)', 
             opacity: 0}),
-          animate('500ms 1.4s ease-in', style({transform: 'translateY(0)', opacity: 1}))
+          animate('500ms 1s ease-in', style({transform: 'translateY(0)', opacity: 1}))
         ])
       ]
     ),
-    trigger(
-      'enterVideo', [
-        transition(':enter', [
-          style({
-            width : '100%',
-            transform: 'translateX(200px)', 
-            opacity: 0}),
-          animate('500ms .7s ease-out', style({transform: 'translateX(0)', opacity: 1, width : '100%'}))
-        ])
-      ]
-    )
   ]
 })
 export class HeroComponent implements OnInit {

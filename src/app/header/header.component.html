@@ -46,9 +46,9 @@
                   <a href="#partners" [ngClass]="{'active': currentActive === 8, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Partners</strong></a>
                 </li>
-                <li>
-                  <a href="#download" [ngClass]="{'active': currentActive === 9, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  ><strong>Download</strong></a>
+                <li class="contact-btn">
+                  <a (click)="getContact()" [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  ><strong>Contact</strong></a>
                 </li>
               </ul>
             </div>

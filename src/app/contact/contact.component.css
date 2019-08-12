@@ -65,27 +65,32 @@
     height: auto;
   }
 
+   /* Contact Form */
   .contact-form {
       padding-top: 20px;
   }
-
   .form-button {
       text-align: center;
   } 
-
   input.ng-invalid.ng-touched,
   textarea.ng-invalid.ng-touched {
       border: red 1px solid;
   }
-
   .help-block {
       color: red;
   }
-
+  h2 {
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
   h2, p, span, label {
       color: #fff;
   }
-
+  input, textarea {
+    border-radius: 0;
+    background-color: #252932;
+    color: #fff;
+  }
   .thank-you-block {
       margin-top: 30px;
       padding: 10px;
@@ -107,6 +112,9 @@
     background-color:rgba(0,0,0,0) !important;
     color: #000 !important;
     border-color:#000 !important;
+  }
+  .form-button {
+    margin-top: 25px;
   }
   
   

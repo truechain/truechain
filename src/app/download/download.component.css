@@ -1,7 +1,8 @@
 /* download section CSS */
 
 .download-section {
-    padding-top: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     overflow: hidden;
 }
 .download-image {
@@ -17,8 +18,9 @@
 .download-text {
     right: 0;
     padding-right: 0;
-    max-width: 450px;
-    padding-top: 80px;
+    width: 100%;
+    text-align: center;
+
 }
 .download-text .app-button img {
     width: 150px;
@@ -41,7 +43,8 @@
 .download-text .app-button {
     width: fit-content;
     height: fit-content;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .download-text .app-button:hover img{
     transform: scale(1.1);
@@ -73,7 +76,7 @@
     }
     .download-buttons {
         text-align: center;
-        margin-right: -25px;
+     
     }
 }
 
