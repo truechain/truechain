@@ -15,6 +15,9 @@
     object-fit: cover;
     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,1));
 }
+.about-text {
+    width: 100%;
+}
 .about-text h2 {
     margin-bottom: 40px;
 }

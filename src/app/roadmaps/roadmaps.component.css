@@ -24,7 +24,7 @@
     width: 2px;
     background-color: #203260;
     top: 1.7%;
-    bottom: 21%;
+    bottom: 210px;
     left: 50%;
     border-radius: 10px;
     margin-left: -3px;
@@ -144,6 +144,12 @@
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media (max-width: 1199px) {
+    .roadmaps-container::after {
+        bottom: 18.3%;
+    }
+  }
 @media (max-width: 991px) {
     .roadmaps-container::after {
         left: 31px;
