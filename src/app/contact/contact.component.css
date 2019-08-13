@@ -92,21 +92,18 @@
       border: 2px green solid;
   }
   .contact-btn {
-    background-color: #203260;
-    color: #fff;
-  }
-  .contact-btn {
-    background-color: #203260;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
   }
   .contact-btn:hover {
     background-color: #000;
     border-color: #fff;
+    color: #fff
   }
   .contact-btn.btn-disabled {
     background-color:rgba(0,0,0,0) !important;
-    color: #000 !important;
-    border-color:#000 !important;
+    color: #fff !important;
+    border-color:#fff !important;
   }
   .form-button {
     margin-top: 25px;
