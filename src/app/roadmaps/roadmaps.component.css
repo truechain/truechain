@@ -214,3 +214,14 @@
         bottom: 25.2em;
     }
   } 
+
+  @media (min-width: 337px) and (max-width: 351px) {
+    .roadmaps-container::after {
+        bottom: 26.2em;
+    }
+  } 
+  @media (max-width: 325px) {
+    .roadmaps-container::after {
+        bottom: 28em;
+    }
+  } 
