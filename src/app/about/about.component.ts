@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 import { AppService } from '../app.service';
 
 @Component({
@@ -6,12 +6,18 @@ import { AppService } from '../app.service';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent implements AfterViewInit {
 
-  constructor(private appService: AppService, element: ElementRef) { 
-    this.appService.aboutElement = element;
+  windowSize: number = window.innerWidth;
+
+  constructor() { }
+
+  ngAfterViewInit() {
+    
   }
 
-  ngOnInit() {
+  @HostListener('window: resize', ['$event'])
+    onResize() {
+      this.windowSize = window.innerWidth;
   }
 }

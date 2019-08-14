@@ -58,10 +58,16 @@
 }
 .navTop {
     color: #fff;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0) !important;
+}
+.navTop.activeAbout {
+    color: #000 !important;
 }
 .navNotTop {
     color: #252932;
+}
+.navNotTop.activeAbout {
+    color: rgb(87, 134, 182) !important;
 }
 li:hover a.navNotTop {
     color: rgb(87, 134, 182) !important;

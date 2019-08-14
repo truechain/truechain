@@ -21,8 +21,20 @@ import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { DownloadComponent } from './download/download.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { ClickOutsideModule } from 'ng-click-outside';
+import { Routes, RouterModule } from '@angular/router';
+import { IndustryComponent } from './industry/industry.component';
+import { MainComponent } from './main/main.component';
+import { TechComponent } from './about/tech/tech.component';
+import { GoalsComponent } from './about/goals/goals.component';
+import { TeamComponent } from './about/team/team.component';
+import { AboutHeroComponent } from './about/about-hero/about-hero.component';
+
+const appRoutes: Routes = [
+  {path: '', component: MainComponent},
+  {path: 'about', component: AboutComponent}
+];
 
 @NgModule({
   declarations: [
@@ -42,6 +54,12 @@ import { ClickOutsideModule } from 'ng-click-outside';
     CaseStudiesComponent,
     DownloadComponent,
     ContactComponent,
+    IndustryComponent,
+    MainComponent,
+    TechComponent,
+    GoalsComponent,
+    TeamComponent,
+    AboutHeroComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +68,8 @@ import { ClickOutsideModule } from 'ng-click-outside';
     AnimateOnScrollModule.forRoot(),
     CountUpModule,
     HttpClientModule,
-    ClickOutsideModule
+    ClickOutsideModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

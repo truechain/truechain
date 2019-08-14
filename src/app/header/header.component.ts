@@ -44,12 +44,7 @@ export class HeaderComponent implements AfterViewInit{
 
   constructor(private appService: AppService) { }
 
-  ngAfterViewInit() { 
-  }
-
-  getContact() {
-    this.appService.contactAppear();
-  }
+  ngAfterViewInit() { }
 
   // Hostlister dynamically tracks the window scroll position. 
   // Below a certain point, this will switch the state from 'active' to 'inactive' and vise versa.
@@ -68,20 +63,18 @@ export class HeaderComponent implements AfterViewInit{
   
       if (scrollPosition >= this.appService.homeOffset && scrollPosition < this.appService.whatOffset) {
         this.currentActive = 1;
-      } else if (scrollPosition >= this.appService.whatOffset && scrollPosition < this.appService.aboutOffset) {
+      } else if (scrollPosition >= this.appService.whatOffset && scrollPosition < this.appService.whyOffset) {
         this.currentActive = 2;
-      } else if (scrollPosition >= this.appService.aboutOffset && scrollPosition < this.appService.whyOffset) {
-        this.currentActive = 3;
       } else if (scrollPosition >= this.appService.whyOffset && scrollPosition < this.appService.useCasesOffset) {
-        this.currentActive = 4;
+        this.currentActive = 3;
       } else if (scrollPosition >= this.appService.useCasesOffset && scrollPosition < this.appService.caseStudiesOffset) {
-        this.currentActive = 5;
+        this.currentActive = 4;
       } else if (scrollPosition >= this.appService.caseStudiesOffset && scrollPosition < this.appService.roadmapOffset) {
-        this.currentActive = 6;
+        this.currentActive = 5;
       } else if (scrollPosition >= this.appService.roadmapOffset && scrollPosition < this.appService.partnersOffset) {
+        this.currentActive = 6;
+      } else if (scrollPosition >= this.appService.partnersOffset && this.currentActive != 0) {
         this.currentActive = 7;
-      } else if (scrollPosition >= this.appService.partnersOffset) {
-        this.currentActive = 8;
       } else {
         this.currentActive = 0;
       }

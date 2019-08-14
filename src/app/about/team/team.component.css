@@ -1,0 +1,71 @@
+/* Team section CSS */
+
+.team-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title-content {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.sub-title-content {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.sub-title-content h3{
+    font-size: 29px;
+}
+.team-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+.team-member {
+    padding: 25px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+    margin-bottom: 20px;
+    transition-duration: .7s;
+}
+.team-member h3 {
+    margin-bottom: 6px;
+}
+.team-member h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.team-member li {
+    text-align: left;
+}
+.team-member p {
+    word-wrap: break-word;
+}
+.team-member i {
+    color: #203260;
+}
+.icon-box {
+    margin-bottom: 20px;
+}
+
+.team-button {
+    text-align: center !important;
+    margin-top: 40px;
+}
+
+.team-member:hover {
+    background-color: #252931;
+    border-color: #203260;
+    transition-duration: .7s;
+}
+
+.team-member:hover i,
+.team-member:hover p,
+.team-member:hover h3,
+.team-member:hover h4,
+.team-member:hover li  {
+    color: #fff;
+}

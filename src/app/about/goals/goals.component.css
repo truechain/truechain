@@ -1,0 +1,33 @@
+/* Goals section CSS */
+
+.goals-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.title-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.goal {
+    padding: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.goal h3 {
+    margin-bottom: 30px;
+}
+.goal .icon-box {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+i {
+    color: #000;
+}
+
+@media(max-width: 767px) {
+    .goals-section {    
+        background-attachment: scroll !important;
+    }
+}

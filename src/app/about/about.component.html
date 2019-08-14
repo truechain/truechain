@@ -1,25 +1,4 @@
-<div class="about-section background-secondary">
-    <div class="container">
-        <div class="row">
-            <!-- <div class="col-lg-6 image">
-                <div class="about-image hide-on-init" animateOnScroll animationName="animated fadeIn">
-                    <img src="http://clarkeglobal.co/truechain/assets/about-image.jpg" alt="about truechain">
-                </div>
-            </div> -->
-            <div class="col-xs-12">
-                <div class="about-text pull-right hide-on-init" animateOnScroll animationName="animated fadeIn">
-                    <h2>Industry Leaders</h2>
-                    <p><strong>First</strong> public chain to implement fruit chain, 
-                        upgrading traditional PoW to fPoW + prevents Selfish Mining Attacks (25% Attack).</p>
-                    <p>TrueChain replaced the ETHash with TrueHash, the world’s <strong>first</strong> fundamentally 
-                        ASIC-resistant algorithm which changes every 3 months.</p>
-                    <a href="#why">
-                        <button class="btn btn-secondary btn-lg">
-                            Learn More
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<app-about-hero id="about-hero"></app-about-hero>
+<app-tech id="tech" [ngClass]="{'offset-header': windowSize > 991}"></app-tech>
+<app-goals id="goals"></app-goals>
+<app-team id="team"></app-team>

@@ -46,15 +46,16 @@ export class AppService {
     this.downloadOffset = this.downloadElement.nativeElement.offsetTop + 360;
   }
 
-  contactAppear() {
-    this.contactForm = true;
-    console.log("Contact Appear");
-    
+  resetOffet() {
+    this.homeOffset = 0;
+    this.whatOffset = 0;
+    this.aboutOffset = 0;
+    this.whyOffset = 0;
+    this.useCasesOffset = 0;
+    this.caseStudiesOffset = 0;
+    this.roadmapOffset = 0;
+    this.partnersOffset = 0;
+    this.downloadOffset = 0;
   }
-
-  contactHide() {
-    this.contactForm = false;
-    console.log("Contact Hidden");
-    
-  }
+  
 }
