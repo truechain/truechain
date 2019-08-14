@@ -95,28 +95,18 @@ p {
        height: auto;
        overflow: visible;
        padding-bottom: 60px;
-
-       /* min-height: 800px !important;
-       max-height: 980px !important; */
    }
-    /* .about-hero-wrap {
-       height: 160vw;
-    }
-    .about-hero-content {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .about-hero-video video{
-        width: 100%;
-        height: auto;
-        box-shadow: 10px 10px 15px #000;
-    }*/
+   .content-wrap {
+       top: 180px;
+   }
 } 
-@media(max-height: 560px) {
+
+@media(max-width: 767px) {
     .content-wrap {
-        top: 35%;
-   }
-}
+        top: 160px;
+    }
+ } 
+ 
 
 @media(max-width: 360px) {
     h1 {

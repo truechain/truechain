@@ -41,8 +41,4 @@ export class HeaderMobileComponent implements OnInit {
   toggleMobileMenu() {
     this.mobileToggle = !this.mobileToggle;
   }
-
-  getContact() {
-    this.appService.contactAppear();
-  }
 }

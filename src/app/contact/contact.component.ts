@@ -99,7 +99,7 @@ export class ContactComponent implements OnInit, DoCheck{
       });
     this.form.reset();
   }
-
+/*
   hideContact() {
     if (this.contactToggle && this.modalOn) {
       this.appService.contactHide();
@@ -114,4 +114,5 @@ export class ContactComponent implements OnInit, DoCheck{
     this.appService.contactAppear();
     this.changeDetector.detectChanges();
   }
+  */
 }
