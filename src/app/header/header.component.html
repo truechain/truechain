@@ -6,7 +6,7 @@
         <!--Logo section-->
         <div class="col-xs-3 logo-container">
           <div class="logo"> 
-            <a href="#">
+            <a href="http://clarkeglobal.co/truechain">
               <img [@logoBlackState]='state' src="http://clarkeglobal.co/truechain/assets/truechain-logo-black.png">
               <img [@logoWhiteState]='state' src="http://clarkeglobal.co/truechain/assets/truechain-logo-white.png">
               <!-- <img [@logoBlackState]='state' src="../assets/truechain-logo-black.png">
@@ -19,31 +19,31 @@
             <div class="navigation">
               <ul class="nav nav-tabs">
                 <li class="main">
-                  <a href="#what" [ngClass]="{'active': currentActive === 2, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="http://clarkeglobal.co/truechain/#what" (click)="aboutYes()" [ngClass]="{'active': currentActive === 2, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>What Are We?</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#why" [ngClass]="{'active': currentActive === 3, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="http://clarkeglobal.co/truechain/#why" (click)="aboutYes()" [ngClass]="{'active': currentActive === 3, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Why TrueChain?</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#use-cases" [ngClass]="{'active': currentActive === 4, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="http://clarkeglobal.co/truechain/#use-cases" (click)="aboutYes()" [ngClass]="{'active': currentActive === 4, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Use Cases</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#case-studies" [ngClass]="{'active': currentActive === 5, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="http://clarkeglobal.co/truechain/#case-studies" (click)="aboutYes()" [ngClass]="{'active': currentActive === 5, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Case Studies</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#roadmap" [ngClass]="{'active': currentActive === 6, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="http://clarkeglobal.co/truechain/#roadmap" (click)="aboutYes()" [ngClass]="{'active': currentActive === 6, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Roadmap</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#partners" [ngClass]="{'active': currentActive === 7, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="http://clarkeglobal.co/truechain/#partners" (click)="aboutYes()"  [ngClass]="{'active': currentActive === 7, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Partners</strong></a>
                 </li>
                 <li>
-                  <a href="/about" [ngClass]="{'activeAbout': currentActive === 0, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a routerLink="/truechain/about" (click)="aboutYes()" [ngClass]="{'activeAbout': currentActive === 0 && state == 'active', 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>About Us</strong></a>
                 </li>
               </ul>

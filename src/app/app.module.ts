@@ -30,6 +30,8 @@ import { TechComponent } from './about/tech/tech.component';
 import { GoalsComponent } from './about/goals/goals.component';
 import { TeamComponent } from './about/team/team.component';
 import { AboutHeroComponent } from './about/about-hero/about-hero.component';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+
 
 const appRoutes: Routes = [
   {path: 'truechain', component: MainComponent},
@@ -71,7 +73,7 @@ const appRoutes: Routes = [
     ClickOutsideModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

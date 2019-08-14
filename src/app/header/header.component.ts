@@ -40,11 +40,21 @@ export class HeaderComponent implements AfterViewInit{
   // Indicates the state of the header. When active, the header displays certain styles
   state = 'inactive';
 
+  // About page?
+  aboutPage: boolean = false;
+
   currentActive: number = 0;
 
   constructor(private appService: AppService) { }
 
   ngAfterViewInit() { }
+
+  aboutYes() {
+    this.aboutPage = true;
+  }
+  aboutNo() {
+    this.aboutPage = false;
+  }
 
   // Hostlister dynamically tracks the window scroll position. 
   // Below a certain point, this will switch the state from 'active' to 'inactive' and vise versa.
