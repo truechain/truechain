@@ -32,8 +32,8 @@ import { TeamComponent } from './about/team/team.component';
 import { AboutHeroComponent } from './about/about-hero/about-hero.component';
 
 const appRoutes: Routes = [
-  {path: '', component: MainComponent},
-  {path: 'about', component: AboutComponent}
+  {path: 'truechain', component: MainComponent},
+  {path: 'truechain/about', component: AboutComponent}
 ];
 
 @NgModule({
