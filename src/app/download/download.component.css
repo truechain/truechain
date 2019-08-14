@@ -80,22 +80,15 @@
     }
 }
 
-@media(max-width: 991px) {
-    .col-md-6 {
-        display: flex !important;
-        flex-flow: column wrap !important;
-        justify-content: center !important;
-        align-content: center !important;
-        padding-left: 20px;
-    }
-    .download-text {
-        padding-top: 0px !important;
-        margin-bottom: 40px;
-    }
-    .app-button img{
-        margin-bottom: 10px;
+@media(max-width: 391px) {
+    .download-text .app-button {
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .download-buttons {
-        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
 }

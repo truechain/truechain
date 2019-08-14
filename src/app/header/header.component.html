@@ -4,7 +4,7 @@
     <div class="container" id="header-main">
       <div class="row">
         <!--Logo section-->
-        <div class="col-xs-2 logo-container">
+        <div class="col-xs-3 logo-container">
           <div class="logo"> 
             <a href="#">
               <img [@logoBlackState]='state' src="http://clarkeglobal.co/truechain/assets/truechain-logo-black.png">
@@ -15,7 +15,7 @@
           </div>
         </div>
         <!--Navigation-->
-        <div class="col-xs-10 header-nav hide-on-init" animateOnScroll animationName="animated fadeIn">
+        <div class="col-xs-9 header-nav hide-on-init" animateOnScroll animationName="animated fadeIn">
             <div class="navigation">
               <ul class="nav nav-tabs">
                 <li>
@@ -45,10 +45,6 @@
                 <li>
                   <a href="#partners" [ngClass]="{'active': currentActive === 8, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Partners</strong></a>
-                </li>
-                <li class="contact-btn">
-                  <a (click)="getContact()" [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
-                  ><strong>Contact</strong></a>
                 </li>
               </ul>
             </div>

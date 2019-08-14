@@ -22,9 +22,9 @@ switch($_SERVER['REQUEST_METHOD']){
         "Company: " . $company  . "\n" . "Phone: " . $phone . "\n" . "\n" . "Message: " . "\n" . $message 
         . "\n" . "\n" . "-- \n This e-mail was sent from a contact form on the TrueChain website";
 
-        $recipient = 'hussain.hamoudi@clarkeglobal.co';
+        $recipient = 'partner@truechain.pro';
         $subject = "TrueChain Contact Form";
-        $headers = "From: TrueChain Contact <hussain.hamoudi@clarkeglobal.co>";
+        $headers = "From: TrueChain Contact <partner@truechain.pro>";
 
         mail($recipient, $subject, $mailBody, $headers);
         break;

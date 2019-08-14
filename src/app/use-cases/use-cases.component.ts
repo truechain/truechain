@@ -14,8 +14,4 @@ export class UseCasesComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  getContact() {
-    this.appService.contactAppear();
-  }
 }
