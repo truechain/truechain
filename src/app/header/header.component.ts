@@ -51,9 +51,13 @@ export class HeaderComponent implements AfterViewInit{
 
   aboutYes() {
     this.aboutPage = true;
+    console.log(this.aboutPage);
+    
   }
   aboutNo() {
     this.aboutPage = false;
+    console.log(this.aboutPage);
+    
   }
 
   // Hostlister dynamically tracks the window scroll position. 
