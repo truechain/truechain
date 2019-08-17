@@ -64,7 +64,7 @@
     padding: 20px 30px;
     position: relative;
     border-radius: 6px;
-    background-color: #F3F5F7;
+    background-color: #203260;
     transition-duration: .5s;
 }
 .roadmap-text:hover {
@@ -81,7 +81,7 @@
     right: 30px;
     border: medium solid #252931;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #252931;
+    border-color: transparent transparent transparent #203260;
     transition-duration: .5s;
 }
 .right::before {
@@ -94,7 +94,7 @@
     left: 30px;
     border: medium solid #252931;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #252931 transparent transparent;
+    border-color: transparent #203260 transparent transparent;
     transition-duration: .5s;
 }
 .left .roadmap-text {
@@ -103,19 +103,28 @@
 .roadmap-text h3 {
     margin-top: 0;
     margin-bottom: 0;
-    transition-duration: .5s;
+    transition-duration: .3s;
+    color: #fff;
 }
 .roadmap-text p.sub {
     margin-bottom: 10px;
     font-weight: 400;
-    transition-duration: .5s;
+    transition-duration: .3s;
+    color: #fff;
 }
+
+.roadmap-text li{
+    color: #fff;
+    transition-duration: .3s;
+}
+
 .roadmap-text:hover h3,
-.roadmap-text:hover p,
+.roadmap-text:hover p.sub,
 .roadmap-text:hover li {
     color: #fff;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
+
 .roadmap-item.right .roadmap-text ul {
     padding: 0;
     padding-left: 20px;

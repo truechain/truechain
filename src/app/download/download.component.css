@@ -35,6 +35,11 @@
 }
 .download-text .app-button i {
     padding-right: 10px;
+    transition-duration: .3s;
+}
+.download-text .app-button:hover i {
+    color: #fff;
+    transition-duration: .3s;
 }
 .download-text .app-button span {
     position: relative;

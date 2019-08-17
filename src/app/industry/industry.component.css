@@ -12,15 +12,10 @@
     margin-bottom: 40px;
 }
 .industry-text button {
-    color: #000;
     margin-top: 30px;
-    border-color: #000;
 }
 .industry-text button:hover {
-    color: #fff;
     margin-top: 30px;
-    background-color: #203260;
-    border-color: #000;
 }
 
 /* mobile responsiveness */

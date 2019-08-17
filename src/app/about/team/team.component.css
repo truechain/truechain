@@ -27,7 +27,7 @@
     width: 350px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px black solid;
+    border: 1px #fff solid;
     margin-bottom: 20px;
     transition-duration: .7s;
 }
@@ -37,9 +37,11 @@
 .team-member h4 {
     margin-bottom: 10px;
     font-size: 18px;
+    color: #fff !important;
 }
 .team-member li {
     text-align: left;
+    color: #fff;
 }
 .team-member p {
     word-wrap: break-word;
@@ -47,6 +49,10 @@
 .team-member i {
     color: #203260;
 }
+.team-member:hover {
+    background-color: #203260 !important;
+}
+
 .icon-box {
     margin-bottom: 20px;
 }
