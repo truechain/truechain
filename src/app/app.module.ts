@@ -34,8 +34,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 
 const appRoutes: Routes = [
-  {path: 'truechain', component: MainComponent},
-  {path: 'truechain/about', component: AboutComponent}
+  {path: '', component: MainComponent},
+  {path: 'about', component: AboutComponent}
 ];
 
 @NgModule({

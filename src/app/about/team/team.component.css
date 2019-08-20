@@ -6,15 +6,18 @@
 }
 .title-content {
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 .sub-title-content {
-    margin-top: 100px;
     text-align: center;
     margin-bottom: 60px;
 }
 .sub-title-content h3{
     font-size: 29px;
+}
+.team-group {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .team-container {
     display: flex;
@@ -37,7 +40,7 @@
 .team-member h4 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #fff !important;
+    color: #fff;
 }
 .team-member li {
     text-align: left;
@@ -67,11 +70,22 @@
     border-color: #203260;
     transition-duration: .7s;
 }
-
+.community .team-member {
+    border-color: #252931;
+}
+.community .team-member h3,
+.community .team-member h4,
+.community .team-member li,
+.community .team-member ul  {
+    color: #000;
+    transition-duration: .3s;
+}
 .team-member:hover i,
 .team-member:hover p,
 .team-member:hover h3,
 .team-member:hover h4,
+.team-member:hover ul,
 .team-member:hover li  {
-    color: #fff;
+    color: #fff !important;
+    transition-duration: .3s;
 }

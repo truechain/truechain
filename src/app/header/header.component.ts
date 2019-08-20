@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, AfterViewInit, ElementRef } from '@angular/core';
 import { trigger, style, state, transition, animate } from '@angular/animations';
 import { AppService } from '../app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -35,30 +36,30 @@ import { AppService } from '../app.service';
     ])
   ]
 })
-export class HeaderComponent implements AfterViewInit{
+export class HeaderComponent implements AfterViewInit, OnInit{
 
   // Indicates the state of the header. When active, the header displays certain styles
   state = 'inactive';
 
   // About page?
-  aboutPage: boolean = false;
+  aboutPage: boolean;
 
   currentActive: number = 0;
 
+  currentURL: string = window.location.href;
+
   constructor(private appService: AppService) { }
 
-  ngAfterViewInit() { }
+  ngOnInit() {
+    if(this.currentURL.includes("about")) {
+      this.aboutPage = true;
+    }
+    else {
+      this.aboutPage = false;      
+    }
+  }
 
-  aboutYes() {
-    this.aboutPage = true;
-    console.log(this.aboutPage);
-    
-  }
-  aboutNo() {
-    this.aboutPage = false;
-    console.log(this.aboutPage);
-    
-  }
+  ngAfterViewInit() { }
 
   // Hostlister dynamically tracks the window scroll position. 
   // Below a certain point, this will switch the state from 'active' to 'inactive' and vise versa.

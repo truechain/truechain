@@ -30,4 +30,7 @@ i {
     .goals-section {    
         background-attachment: scroll !important;
     }
+    .first {
+        margin-bottom: 30px;
+    }
 }

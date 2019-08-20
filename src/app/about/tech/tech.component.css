@@ -26,3 +26,8 @@
 i {
     color: #fff;
 }
+@media(max-width: 767px) {
+    .first {
+        margin-bottom: 30px;
+    }
+}

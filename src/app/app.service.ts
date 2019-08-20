@@ -28,9 +28,6 @@ export class AppService {
   public partnersOffset: number = null;
   public downloadOffset: number = null;
 
-  // Boolean for opening contact form modal
-  public contactForm: boolean = false;
-
   constructor() { }
 
   // sets the offsets to the respective sections
