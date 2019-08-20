@@ -82,7 +82,7 @@ export class ContactComponent implements OnInit, DoCheck{
     this.endpoint = "http://clarkeglobal.co/truechain/assets/contact.php";
   }
   ngDoCheck() { 
-    this.contactToggle = this.appService.contactForm;
+    //this.contactToggle = this.appService.contactForm;
   }
 
   onPost(postData: {name: string; email: string; company: string; phone: string; message: string;}){

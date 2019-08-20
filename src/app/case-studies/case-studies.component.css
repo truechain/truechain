@@ -3,7 +3,7 @@
 .case-studies-section {
     padding-top: 100px;
     padding-bottom: 100px;
-    background:  linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7) ), url("http://clarkeglobal.co/truechain/assets/system-2660914_1920.jpg") fixed center center no-repeat;
+    background:  linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7) ), url("/assets/system-2660914_1920.jpg") fixed center center no-repeat;
     background-size: cover;
     color: #fff;
     text-align: center;
