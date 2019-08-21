@@ -26,6 +26,9 @@
     margin-bottom: 30px;
     color: #fff !important;
 }
+.case-study p {
+    color: #fff !important;
+}
 
 @media(max-width: 767px) {
     .case-studies-section {    

@@ -27,32 +27,32 @@ h1 {
 h2 {
   font-size: 40px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   margin-top: 0;
 }
 h3 {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   -webkit-font-smoothing: antialiased;
 }
 h4 {
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   -webkit-font-smoothing: antialiased;
 }
 
 h5 {
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   -webkit-font-smoothing: antialiased;
 }
 
 p {
-  color: #fff;
+  color: #000;
   font-size: 17px;
   font-weight: 300;
   -webkit-font-smoothing: antialiased  !important;
@@ -64,7 +64,7 @@ li {
 }
 
 i {
-  color: #fff;
+  color: #000;
 }
 
 
@@ -103,20 +103,10 @@ i {
 }
 
 .background-primary {
-  background-color: #252931;
-}
-.background-secondary {
   background-color: #F7F7F7;
 }
-
-.background-secondary p,
-.background-secondary h2,
-.background-secondary h3,
-.background-secondary h4,
-.background-secondary h5,
-.background-secondary h6,
-.background-secondary i{
-  color: #000;
+.background-secondary {
+  background-color: rgb(230, 236, 240);
 }
 
 /* Animations */

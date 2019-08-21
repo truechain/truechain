@@ -4,7 +4,7 @@
 .stats-section {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color:  #F3F5F7;
+    background-color:  #252931;
 }
 .stats-container {
     padding: 16px;
@@ -20,15 +20,11 @@
 
 .stats-container .stats-content h3,
 .stats-container .stats-content p{
-    color: #252931;
+    color: #fff;
     transition-duration: .5s;
 }
 .space {
     display: none;
-}
-
-hr {
-    border-color: #252931 !important;
 }
 
 /* mobile responsiveness */
