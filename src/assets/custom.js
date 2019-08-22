@@ -1,26 +1,23 @@
 jQuery(document).ready(function ($) {
     "use strict";
 
+    var currentURL = window.location.href;
+
     //Smooth Scrolling for navigation with offset for header
     $(function() {
-        if (window.innerWidth > 991) {
-            $('.nav-tabs > .main, .nav-tabs > .main > a, .mobile-menu > a').click(function (e) {
+            $('.nav-tabs > .main, .nav-tabs > .main > a').click(function (e) {
                 var target = $(this.hash);
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 98
-                }, 800);
-                return false;
-            });
-        }
-        else {
-            $('.nav-tabs > .main, .nav-tabs > .main > a, .mobile-menu > a').click(function (e) {
-                var target = $(this.hash);
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 800);
-                return false;
-            });
-        }
+                if (window.innerWidth > 991 && !currentURL.includes("about")) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 98
+                    }, 800);
+                }
+                else {
+                    e.default();
+                }
+            return false;
+        });
       });
     //Smooth scrolling for buttons with offset for header
     $(function() {
@@ -56,5 +53,25 @@ jQuery(document).ready(function ($) {
             }, 800);
             return false;
         });
+    });
+
+    //Smooth Scrolling for navigation with offset for header between pages
+    $(function() {
+        var hash= window.location.hash
+        var target = $(hash);
+
+        if ( hash == '' || hash == '#' || hash == undefined) {
+            return false; 
+        }
+        else if(target.length && window.innerWidth > 991) {
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            
+            $('html,body').stop().animate({
+            scrollTop: target.offset().top - 98 //offsets for fixed header
+            }, 'linear');
+        }
+        else {
+            e.default();
+        }
     });
 });

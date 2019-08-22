@@ -16,6 +16,9 @@ img {
     height: 50px;
     object-fit: contain;
 }
+i {
+    color: #fff;
+}
 
 /* Footer top styles */
 .footer-top {
@@ -92,9 +95,6 @@ img {
     color:#fff;
     border-color: #fff;
     transition-duration: .3s;
-}
-.social-media-row i {
-    color: #fff;
 }
 
 .social-header {

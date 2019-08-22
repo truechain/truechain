@@ -16,7 +16,7 @@ export class MainComponent implements AfterViewInit {
     this.appService.getOffset();
   }
 
-  @HostListener('window: resize', ['$event'])
+  @HostListener('window: resize')
     onResize() {
       this.windowSize = window.innerWidth;
   }

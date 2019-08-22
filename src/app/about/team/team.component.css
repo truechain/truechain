@@ -30,7 +30,7 @@
     width: 350px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px #fff solid;
+    border: 1px #000 solid;
     margin-bottom: 20px;
     transition-duration: .7s;
 }
@@ -40,11 +40,9 @@
 .team-member h4 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #fff;
 }
 .team-member li {
     text-align: left;
-    color: #fff;
 }
 .team-member p {
     word-wrap: break-word;
@@ -70,13 +68,13 @@
     border-color: #203260;
     transition-duration: .7s;
 }
-.community .team-member {
+.team-member {
     border-color: #252931;
 }
-.community .team-member h3,
-.community .team-member h4,
-.community .team-member li,
-.community .team-member ul  {
+.team-member h3,
+.team-member h4,
+.team-member li,
+.team-member ul  {
     color: #000;
     transition-duration: .3s;
 }

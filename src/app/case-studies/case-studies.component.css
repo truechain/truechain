@@ -13,6 +13,9 @@
     text-align: center;
     margin-bottom: 60px;
 }
+.title-content p {
+    color: #fff !important;
+}
 .case-study {
     padding: 15px;
     max-width: 500px;
