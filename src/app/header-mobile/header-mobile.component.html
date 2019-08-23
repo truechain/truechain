@@ -27,13 +27,14 @@
   <ng-container *ngIf="mobileToggle">
     <div class="container full-width" id="header-mobile-subsection" [@mobileMenuState]>
       <div class="mobile-menu">
-        <a href="#what"><strong>What are We?</strong></a>
-        <a href="#why"><strong>Why TrueChain?</strong></a>
-        <a href="#use-cases"><strong>Use Cases</strong></a>
-        <a href="#case-studies"><strong>Case Studies</strong></a>
-        <a href="#roadmap"><strong>Roadmap</strong></a>
-        <a href="#partners"><strong>Partners</strong></a>
-        <a href="/about"><strong>About us</strong></a>
+        <a href="#what" class="nav-item"><strong>What are We?</strong></a>
+        <a href="#why" class="nav-item"><strong>Why TrueChain?</strong></a>
+        <a href="#use-cases" class="nav-item"><strong>Use Cases</strong></a>
+        <a href="#case-studies" class="nav-item"><strong>Case Studies</strong></a>
+        <a href="#roadmap" class="nav-item"><strong>Roadmap</strong></a>
+        <a href="#partners" class="nav-item"><strong>Partners</strong></a>
+        <a href="/about" class="nav-item"><strong>About us</strong></a>
+        <span><a href="#" [ngClass]="{'activeLanguage' : languageToggleEN}">English</a> / <a href="#" [ngClass]="{'activeLanguage': languageToggleCN}">Chinese</a></span>
       </div>
     </div>
   </ng-container>

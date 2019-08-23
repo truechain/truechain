@@ -61,15 +61,27 @@
     text-align: center;
     width: 100%;
 }
-.mobile-menu a {
+.mobile-menu a.nav-item {
     display: block;
     padding: 10px 0px 10px 0px;
     border-bottom: #000 solid 1px;
     color: #203260;
     background-color: #F3F5F7; 
 }
-.mobile-menu a:first-child {
+.mobile-menu span {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    border-bottom: #000 solid 1px;
+    background-color: #F3F5F7; 
+}
+.mobile-menu span a {
+    color: #203260;
+}
+.mobile-menu a:first-child.nav-item {
     border-top: #000 solid 1px;
+}
+.activeLanguage {
+    font-weight: bold;
 }
 
 @media(max-width: 767px) {

@@ -32,9 +32,30 @@ export class HeaderMobileComponent implements OnInit {
   // toggle for mobile meny. True displays it. False hides it.
   mobileToggle: boolean = false;
 
+  // toggle for english language
+  languageToggleEN: boolean = false;
+
+  // toggle for chinese language
+  languageToggleCN: boolean = false;
+
+  //current URL
+  currentURL = window.location.hash;
+
   constructor(private appService: AppService) { }
 
   ngOnInit() {
+    if(this.currentURL.includes("en")) {
+      this.languageToggleEN = true;
+      this.languageToggleCN = false;
+    }
+    else if(this.currentURL.includes("cn")){
+      this.languageToggleEN = false;
+      this.languageToggleCN = true;
+    }
+    else{
+      this.languageToggleEN = false;
+      this.languageToggleCN = false;
+    }
   }
 
   // Toggles the hidden mobile menu by switching the mobileToggle state.
