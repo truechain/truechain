@@ -44,8 +44,16 @@ export class HeaderComponent implements AfterViewInit, OnInit{
   // About page?
   aboutPage: boolean;
 
+  // boolean to toggle language to english
+  activeLanguageEN: boolean;
+
+  // boolean to toggle language to chinese
+  activeLanguageCN: boolean;
+
+  // current active nav item
   currentActive: number = 0;
 
+  //current URL
   currentURL: string = window.location.href;
 
   constructor(private appService: AppService) { }
@@ -56,6 +64,19 @@ export class HeaderComponent implements AfterViewInit, OnInit{
     }
     else {
       this.aboutPage = false;      
+    }
+
+    if(this.currentURL.includes("en")) {
+      this.activeLanguageEN = true;
+      this.activeLanguageCN = false;
+    }
+    else if(this.currentURL.includes("cn")){
+      this.activeLanguageEN = false;
+      this.activeLanguageCN = true;
+    }
+    else{
+      this.activeLanguageEN = false;
+      this.activeLanguageCN = false;
     }
   }
 
@@ -88,7 +109,7 @@ export class HeaderComponent implements AfterViewInit, OnInit{
         this.currentActive = 5;
       } else if (scrollPosition >= this.appService.roadmapOffset && scrollPosition < this.appService.partnersOffset) {
         this.currentActive = 6;
-      } else if (scrollPosition >= this.appService.partnersOffset && this.currentActive != 0) {
+      } else if (scrollPosition >= this.appService.partnersOffset) {
         this.currentActive = 7;
       } else {
         this.currentActive = 0;

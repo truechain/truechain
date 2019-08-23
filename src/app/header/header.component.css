@@ -40,13 +40,19 @@
 
 .nav-tabs li a {
     border: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
 }
-
-.nav-tabs li:hover a {
+.nav-tabs li {
+    padding: 0px;
+}
+.nav-tabs li.lang {
+    padding-top: 9px;
+}
+.nav-tabs li a:hover {
     border-bottom: none;
     border-radius: 5px;
-}
-.nav-tabs li:hover a{ 
     background-color: rgba(0, 0, 0, 0);
     color: #000000;
 }
@@ -69,10 +75,11 @@
 .navNotTop.activeAbout {
     color: rgb(87, 134, 182) !important;
 }
-li:hover a.navNotTop {
+li a:hover.navNotTop {
     color: rgb(87, 134, 182) !important;
 }
-.contact-btn {
-    cursor: pointer;
+.activeLanguage {
+    font-weight: bold;
 }
+
 

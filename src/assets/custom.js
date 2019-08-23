@@ -13,8 +13,16 @@ jQuery(document).ready(function ($) {
                         scrollTop: target.offset().top - 98
                     }, 800);
                 }
+                else if (window.innerWidth <= 991 && !currentURL.includes("about")){
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 800);
+                }
                 else {
-                    e.default();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 800);
                 }
             return false;
         });
@@ -71,7 +79,12 @@ jQuery(document).ready(function ($) {
             }, 'linear');
         }
         else {
-            e.default();
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            
+            $('html,body').stop().animate({
+            scrollTop: target.offset().top //offsets for fixed header
+            }, 'linear');
         }
+        return false; 
     });
 });

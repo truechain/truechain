@@ -46,6 +46,13 @@
                   <a href="/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>About Us</strong></a>
                 </li>
+                <li class="lang">
+                  <span><a href="#" [ngClass]="{'activeLanguage': activeLanguageEN, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  >EN</a></span>
+                  <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span> 
+                  <span><a href="#" [ngClass]="{ 'activeLanguage': activeLanguageCN, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  s>CN</a></span>
+                </li>
               </ul>
             </div>
           </div>
