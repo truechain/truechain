@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5 hide-on-init" animateOnScroll animationName="animated fadeIn">
-                <div class="what-text">
+                <div class="what-text" *ngIf="english">
                     <h2>What is TrueChain?</h2>
                     <p>TrueChain is the world's first public chain that implemented 
                         fPoW+ PBFT hybrid consensus and has a strong global open source 
@@ -13,6 +13,16 @@
                     <div class="what-buttons">
                         <a class="what-button" href="#industry">
                             <button class="btn btn-secondary btn-lg">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="what-text" *ngIf="chinese">
+                    <h2>什么是TrueChain (初链)?</h2>
+                    <p>初链是世界上第一个实施fPoW + PBFT混合共识的公链，并拥有强大的全球开源开发者社群支持。</p>
+                    <p>初链为去中心化应用和金融交易提供高性能和高安全性的底层公共区块链基础设施。</p>
+                    <div class="what-buttons">
+                        <a class="what-button" href="#industry">
+                            <button class="btn btn-secondary btn-lg">了解更多详情</button>
                         </a>
                     </div>
                 </div>

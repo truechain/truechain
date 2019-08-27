@@ -51,6 +51,9 @@ declare var particlesJS: any;
 })
 export class HeroComponent implements OnInit {
 
+  english: boolean = false;
+  chinese: boolean = true;
+
   constructor(private appService: AppService, element: ElementRef) { 
     this.appService.homeElement = element;
   }
@@ -58,6 +61,11 @@ export class HeroComponent implements OnInit {
   ngOnInit() {
     //Loads the particle effects from the particle.js library
     particlesJS.load('particles-js', '../assets/particles.json');
+
+    this.appService.whichLanguage();
+
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese; 
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-team',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  english: boolean = false;
+  chinese: boolean = true;
+
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.appService.whichLanguage();
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese;
   }
-
 }

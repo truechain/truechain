@@ -2,11 +2,13 @@
     <div class="container">
         <div class="row title-content">
             <div class="col-xs-12">
-                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp" *ngIf="english">
                     Why TrueChain?</h2>
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp" *ngIf="chinese">
+                    为什么选择初链</h2>
             </div>
         </div>
-        <div class="why-container">
+        <div class="why-container" *ngIf="english">
             <div class="row">
                 <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp">
                     <div class="why-item">
@@ -51,11 +53,52 @@
                 </div>
             </div>
         </div>
+        <div class="why-container" *ngIf="chinese">
+            <div class="row">
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp">
+                    <div class="why-item">
+                        <div class="why-content">
+                            <h3>一个简单高效的区块链</h3>
+                            <p>无需授权的PBFT-fPoW混合共识加上安全分片技术，使得初链解决了无授权区块链的效率和去中心化之间的冲突。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-1">
+                    <div class="why-item">
+                        <div class="why-content">
+                            <h3>一个混合共识激励机制</h3>
+                            <p>初链是世界上第一个为混合共识治理而设计激励模型的公司，它将提高市场对于为区块链技术提供经济报酬的意识。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
+                    <div class="why-item">
+                        <div class="why-content">
+                            <h3>强大的全球开发者社区</h3>
+                            <p>在新一代的免授权区块链中，初链拥有中国最大、全球发展最快的开发者社区。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-3">
+                    <div class="why-item last">
+                        <div class="why-content">
+                            <h3>解决了“不可能三角”</h3>
+                            <p>初链是第一个解决公链领域最显著的问题 “不可能三角”的在运行的第三代公链。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12">
                 <div class="why-button hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-3">
-                    <a href="#use-cases">
+                    <a href="#use-cases" *ngIf="english">
                         <button class="btn btn-secondary btn-lg">Learn More</button>
+                    </a>
+                    <a href="#use-cases" *ngIf="chinese">
+                        <button class="btn btn-secondary btn-lg">了解更多详情</button>
                     </a>
                 </div>
             </div>

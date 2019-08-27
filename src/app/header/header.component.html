@@ -6,7 +6,7 @@
         <!--Logo section-->
         <div class="col-xs-2 logo-container">
           <div class="logo"> 
-            <a href="#">
+            <a href="{{logoPath}}">
               <img [@logoBlackState]='state' src="../assets/truechain-logo-black.png">
               <img [@logoWhiteState]='state' src="../assets/truechain-logo-white.png">
               <!-- <img [@logoBlackState]='state' src="../assets/truechain-logo-black.png">
@@ -17,43 +17,88 @@
         <!--Navigation-->
         <div class="col-xs-10 header-nav hide-on-init" animateOnScroll animationName="animated fadeIn">
             <div class="navigation">
-              <ul class="nav nav-tabs">
+              <ul class="nav nav-tabs" *ngIf="english">
                 <li class="main">
-                  <a href="#what" [ngClass]="{'active': currentActive === 2 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="/en#what" [ngClass]="{'active': currentActive === 2 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>What Are We?</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#why" [ngClass]="{'active': currentActive === 3 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="/en#why" [ngClass]="{'active': currentActive === 3 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Why TrueChain?</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#use-cases" [ngClass]="{'active': currentActive === 4 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="/en#use-cases" [ngClass]="{'active': currentActive === 4 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Use Cases</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#case-studies" [ngClass]="{'active': currentActive === 5 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="/en#case-studies" [ngClass]="{'active': currentActive === 5 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Case Studies</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#roadmap" [ngClass]="{'active': currentActive === 6 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="/en#roadmap" [ngClass]="{'active': currentActive === 6 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Roadmap</strong></a>
                 </li>
                 <li class="main">
-                  <a href="#partners" [ngClass]="{'active': currentActive === 7 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="/en#partners" [ngClass]="{'active': currentActive === 7 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>Partners</strong></a>
                 </li>
                 <li>
-                  <a href="/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a href="/en/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>About Us</strong></a>
                 </li>
                 <li class="lang">
-                  <span><a href="#" [ngClass]="{'activeLanguage': activeLanguageEN, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <span><a href="{{englishPath}}" 
+                          [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                          (click)="switchToEnglish()"
                   >EN</a></span>
                   <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span> 
-                  <span><a href="#" [ngClass]="{ 'activeLanguage': activeLanguageCN, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <span><a href="{{chinesePath}}" 
+                          [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                          (click)="switchToChinese()"
                   s>CN</a></span>
                 </li>
               </ul>
+              <ul class="nav nav-tabs" *ngIf="chinese">
+                  <li class="main">
+                    <a href="#what" [ngClass]="{'active': currentActive === 2 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>我们是什么?</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="#why" [ngClass]="{'active': currentActive === 3 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>为什么选择初链</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="#use-cases" [ngClass]="{'active': currentActive === 4 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>应用实例</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="#case-studies" [ngClass]="{'active': currentActive === 5 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>实例探究</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="#roadmap" [ngClass]="{'active': currentActive === 6 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>发展历程</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="#partners" [ngClass]="{'active': currentActive === 7 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>我们的合作伙伴</strong></a>
+                  </li>
+                  <li>
+                    <a href="/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>关于我们</strong></a>
+                  </li>
+                  <li class="lang">
+                    <span><a href="{{englishPath}}" 
+                            [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToEnglish()"
+                    >EN</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span> 
+                    <span><a href="{{chinesePath}}" 
+                            [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToChinese()"
+                    s>CN</a></span>
+                  </li>
+                </ul>
             </div>
           </div>
       </div>

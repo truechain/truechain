@@ -3,30 +3,24 @@
         <div class="row">
             <div class="col-xs-12 hide-on-init" animateOnScroll animationName="animated fadeInUp">
                 <div class="download-text pull-right">
-                    <h2>Download TrueChain's Light Wallet App</h2>
+                    <h2 *ngIf="english">Download TrueChain's Light Wallet App</h2>
+                    <h2 *ngIf="chinese">下载初链的轻钱包（Light Wallet）应用程序</h2>
                     <div class="download-buttons">
                         <a href="https://dapp.truedapp.net/appdown/" target="_blank" class="app-button">
                             <button class="btn btn-secondary btn-lg">
                                 <i class="fab fa-apple fa-2x"></i>
                                 <span>iOS</span>
                             </button>
-                            <!-- <img src="../assets/app-store.png" alt="App Store"> -->
                         </a>
                         <a href="https://dapp.truedapp.net/appdown/" target="_blank" class="app-button">
                             <button class="btn btn-secondary btn-lg">
                                 <i class="fab fa-android fa-2x"></i>
                                 <span>Android</span>
                             </button>
-                            <!-- <img src="../assets/google-store.png" alt="Google Play Store"> -->
                         </a>
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-md-6 col-centered">
-                <div class="download-image hide-on-init center-block" animateOnScroll animationName="animated fadeIn">
-                    <img src="http://clarkeglobal.co/truechain/assets/phone.png" alt="TrueChain App">
-                </div>
-            </div> -->
         </div>
     </div>
 </div>

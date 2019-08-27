@@ -1,5 +1,5 @@
 <div class="goals-section background-secondary">
-    <div class="container">
+    <div class="container" *ngIf="english">
         <div class="row">
             <div class="title-content">
                 <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">Our Goal</h2>
@@ -27,6 +27,34 @@
                         entrepreneurs to be part of the TrueChain movement to building the future decentralized economy. Not only 
                         does TrueChain have a global developer community, we also have a library of open-sourced products that are handy 
                         for the developers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="chinese">
+        <div class="row">
+            <div class="title-content">
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">我们的目标</h2>
+                <p class="hide-on-init" animateOnScroll animationName="animated fadeInUp">建立一个可加速去中心化经济发展的区块链和社区</p>
+            </div>
+        </div>
+        <div class="row goals-container">
+            <div class="col-sm-6 hide-on-init first" animateOnScroll animationName="animated fadeIn animated-delay-2">
+                <div class="icon-box">
+                    <i class="far fa-chart-bar fa-5x"></i>
+                </div>
+                <div class="goal">
+                    <p>凭借业界领先的技术，初链旨在为去中心化经济提供有效且治理良好的区块链。我们提出了第一个混合共识激励机制，将经济效益作为维护和改善链条的动力。
+                        同时，我们还建立了稳定的燃料费机制，以降低去中心化程序开发商和运营商的成本，并使区块链更加公开。</p>
+                </div>
+            </div>
+            <div class="col-sm-6 hide-on-init" animateOnScroll animationName="animated fadeIn animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-users fa-5x"></i>
+                </div>
+                <div class="goal">
+                    <p>除平台之外，初链还建立了一个包罗万象的社区，以吸引全球开发商和企业家参与初链运动，以加速建立未来的去中心化经济。 初链不仅拥有全球开发者社区，
+                        还拥有一个开源产品库，可供开发人员使用。</p>
                 </div>
             </div>
         </div>

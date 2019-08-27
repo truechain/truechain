@@ -1,7 +1,6 @@
-import { Component, OnInit, HostListener, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger, style, state, transition, animate } from '@angular/animations';
 import { AppService } from '../app.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -36,7 +35,7 @@ import { Router } from '@angular/router';
     ])
   ]
 })
-export class HeaderComponent implements AfterViewInit, OnInit{
+export class HeaderComponent implements OnInit{
 
   // Indicates the state of the header. When active, the header displays certain styles
   state = 'inactive';
@@ -45,42 +44,83 @@ export class HeaderComponent implements AfterViewInit, OnInit{
   aboutPage: boolean;
 
   // boolean to toggle language to english
-  activeLanguageEN: boolean;
+  english: boolean;
 
   // boolean to toggle language to chinese
-  activeLanguageCN: boolean;
+  chinese: boolean;
+
+  // path for engish version of the site
+  englishPath: string;
+
+  //path for chinese version of the site
+  chinesePath: string;
+
+  //Url path for logo link
+  logoPath: string = '';
 
   // current active nav item
   currentActive: number = 0;
 
-  //current URL
-  currentURL: string = window.location.href;
-
   constructor(private appService: AppService) { }
 
   ngOnInit() {
-    if(this.currentURL.includes("about")) {
+    this.appService.whichLanguage();
+
+    if(this.appService.currentURL.includes("about")) {
       this.aboutPage = true;
     }
     else {
       this.aboutPage = false;      
     }
 
-    if(this.currentURL.includes("en")) {
-      this.activeLanguageEN = true;
-      this.activeLanguageCN = false;
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese;
+
+    this.getLogoPath();
+  }
+
+  //retrieve the url path if the logo is clicked depending on language
+  getLogoPath() {
+    this.appService.whichLanguage;
+
+    if(this.appService.english) {
+      this.logoPath = "/en";
     }
-    else if(this.currentURL.includes("cn")){
-      this.activeLanguageEN = false;
-      this.activeLanguageCN = true;
+    else if(this.appService.chinese) {
+      this.logoPath = "";
     }
-    else{
-      this.activeLanguageEN = false;
-      this.activeLanguageCN = false;
+    else {
+      this.logoPath = "";
     }
   }
 
-  ngAfterViewInit() { }
+
+  //switches URL path to english version of the site
+  switchToEnglish(){
+
+    this.appService.currentURL = window.location.href;
+
+    if(this.appService.currentURL.includes("about")) {
+      this.englishPath = "/en/about";
+    }
+    else {
+      this.englishPath = "/en"
+    }
+  }
+
+  //switches URL path to chinese version of the site
+  switchToChinese(){
+
+    this.appService.currentURL = window.location.href;
+
+    if(this.appService.currentURL.includes("about")) {
+      this.chinesePath = "/about";
+    }
+    else {
+      this.chinesePath = "#"
+    }
+  }
+
 
   // Hostlister dynamically tracks the window scroll position. 
   // Below a certain point, this will switch the state from 'active' to 'inactive' and vise versa.

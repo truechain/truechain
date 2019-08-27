@@ -1,12 +1,16 @@
 <div class="use-cases-section background-secondary">
     <div class="container">
         <div class="row">
-            <div class="title-content">
+            <div class="title-content" *ngIf="english">
                 <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">Use Cases</h2>
                 <p class="hide-on-init" animateOnScroll animationName="animated fadeInUp">In a Fast Growing Ecosystem</p>
             </div>
+            <div class="title-content" *ngIf="chinese">
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">应用实例</h2>
+                <p class="hide-on-init" animateOnScroll animationName="animated fadeInUp">快速发展的应用生态</p>
+            </div>
         </div>
-        <div class="row use-cases-container">
+        <div class="row use-cases-container" *ngIf="english">
             <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInLeft animated-delay-2">
                 <div class="icon-box">
                     <i class="fas fa-laptop-code fa-4x"></i>
@@ -50,11 +54,58 @@
                 <p>TrueBridge, Smartins, Nest, Traceability, Mixmarvel, PandaST Protocol</p>
             </div>
         </div>
+        <div class="row use-cases-container" *ngIf="chinese">
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInLeft animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-laptop-code fa-4x"></i>
+                </div>
+                <h3>区块链浏览器</h3>
+                <p> TrueScan, TrueLens</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-gamepad fa-4x"></i>
+                </div>
+                <h3>游戏</h3>
+                <p>BC.GAME, AIPACA, TrueHeart Game, TrueCard, TrueHonor Red Packet</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInRight animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-mobile-alt fa-4x"></i>
+                </div>
+                <h3>去中心化的企业应用程序</h3>
+                <p>Pickus, Base.io, True Art, Rose Chain</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInLeft animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-coins fa-4x"></i>
+                </div>
+                <h3>电子钱包</h3>
+                <p>True Wallet 3.0, Meta True, Money Safe, GreenBelt</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
+                <div class="icon-box">
+                    <i class="fab fa-connectdevelop fa-4x"></i>
+                </div>
+                <h3>资产代币化应用</h3>
+                <p>Pandaq, DigiST</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInRight animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-layer-group fa-4x"></i>
+                </div>
+                <h3>第2层基础设施</h3>
+                <p>TrueBridge, Smartins, Nest, Traceability, Mixmarvel, PandaST Protocol</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12">
                 <div class="use-cases-button hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
-                    <a href="#case-studies">
+                    <a href="#case-studies" *ngIf="english">
                         <button class="btn btn-secondary btn-lg">Learn More</button>
+                    </a>
+                    <a href="#case-studies" *ngIf="chinese">
+                        <button class="btn btn-secondary btn-lg">了解更多详情</button>
                     </a>
                 </div>
             </div>

@@ -8,11 +8,17 @@ import { AppService } from '../app.service';
 })
 export class PartnersComponent implements OnInit {
 
+  english: boolean = false;
+  chinese: boolean = true;
+
   constructor(private appService: AppService, element: ElementRef) { 
     this.appService.partnersElement = element;
   }
 
   ngOnInit() {
+    this.appService.whichLanguage();
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese;
   }
 
 }

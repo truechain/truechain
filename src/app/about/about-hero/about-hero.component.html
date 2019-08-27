@@ -7,9 +7,13 @@
         <!--about-hero section content-->
         <div class="content-wrap row">
         <div class="col-xs-12">
-            <div class="about-hero-content">
+            <div class="about-hero-content" *ngIf="english">
                 <h1 [@enterHeader]><strong style="color: #fff">About Us</strong></h1>
                 <a [@enterButton] href="/about#tech"><button class="btn btn-primary btn-lg">Learn More</button></a> 
+            </div>
+            <div class="about-hero-content" *ngIf="chinese">
+                <h1 [@enterHeader]><strong style="color: #fff">关于我们</strong></h1>
+                <a [@enterButton] href="/about#tech"><button class="btn btn-primary btn-lg">了解更多详情</button></a> 
             </div>
         </div>
         </div>

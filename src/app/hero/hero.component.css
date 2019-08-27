@@ -53,6 +53,7 @@
 h1, p {
     color: #fff;
     position: relative;
+    margin: auto;
 }
 h1 {
     font-size: 60px;

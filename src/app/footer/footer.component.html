@@ -19,7 +19,8 @@
               <div class="social-content">
                 <div class="social-header">
                   <!--<img src="../assets/truechain-logo-footer.png" alt="truechain logo footer"><span> Official SNS Platform</span>-->
-                  <h5>Official SNS Platform</h5>
+                  <h5 *ngIf="english">Official SNS Platform</h5>
+                  <h5 *ngIf="chinese">官方社交平台</h5>
                 </div>
                 <div class="social-media-row">
                   <a href="https://twitter.com/truechaingroup/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
@@ -37,7 +38,8 @@
             <div class="tech-guides">
               <!--Mining-->
               <div class="mining-content">
-                <h5>TrueChain Mining Guides</h5>
+                <h5 *ngIf="english">TrueChain Mining Guides</h5>
+                <h5 *ngIf="chinese">初链采矿指南</h5>
                 <div class="mining-buttons row">
                   <a href="https://qiniu.truescan.net/pdf/ming-version-docker-en.pdf" target="_blank">
                     <button class="btn btn-primary">
@@ -73,7 +75,7 @@
       <div class="footer-bottom full-width">
         <!--Footer bottom content--> 
         <div class="footer-bottom-content container">
-          <div class="row">
+          <div class="row" *ngIf="english">
             <div class="col-sm-5">
               <span>Copyright ⓒ TRUECHAIN FOUNDATION LTD. All Rights Reserved.</span>
             </div>
@@ -81,11 +83,20 @@
               <span>Contact Us：</span><a href="mailto:partner@truechain.pro">partner@truechain.pro</a>
             </div>
             <div class="col-sm-3">
-              
-                <span>Sitemap: </span><a href="https://www.truechain.pro/sitemap.xml">XML</a>
+              <span>Sitemap: </span><a href="https://www.truechain.pro/sitemap.xml">XML</a>
             </div>
           </div>
-
+          <div class="row" *ngIf="chinese">
+              <div class="col-sm-5">
+                <span>所有版权归ⓒTRUECHAIN FOUNDATION LTD所有。</span>
+              </div>
+              <div class="col-sm-4">
+                <span>联系我们：</span><a href="mailto:partner@truechain.pro">partner@truechain.pro</a>
+              </div>
+              <div class="col-sm-3">
+                <span>站点地图: </span><a href="https://www.truechain.pro/sitemap.xml">XML</a>
+              </div>
+          </div>
         </div>
       </div>
     </div>

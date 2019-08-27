@@ -29,14 +29,23 @@ import { AppService } from '../app.service';
 })
 export class HeaderMobileComponent implements OnInit {
 
+  // boolean to toggle language to english
+  english: boolean;
+
+  // boolean to toggle language to chinese
+  chinese: boolean;
+
+  // path for engish version of the site
+  englishPath: string;
+
+  //path for chinese version of the site
+  chinesePath: string;
+
+  //Url path for logo link
+  logoPath: string = '';
+
   // toggle for mobile meny. True displays it. False hides it.
   mobileToggle: boolean = false;
-
-  // toggle for english language
-  languageToggleEN: boolean = false;
-
-  // toggle for chinese language
-  languageToggleCN: boolean = false;
 
   //current URL
   currentURL = window.location.hash;
@@ -44,22 +53,56 @@ export class HeaderMobileComponent implements OnInit {
   constructor(private appService: AppService) { }
 
   ngOnInit() {
-    if(this.currentURL.includes("en")) {
-      this.languageToggleEN = true;
-      this.languageToggleCN = false;
-    }
-    else if(this.currentURL.includes("cn")){
-      this.languageToggleEN = false;
-      this.languageToggleCN = true;
-    }
-    else{
-      this.languageToggleEN = false;
-      this.languageToggleCN = false;
-    }
+    this.appService.whichLanguage();
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese;
+
+    this.getLogoPath();
   }
 
   // Toggles the hidden mobile menu by switching the mobileToggle state.
   toggleMobileMenu() {
     this.mobileToggle = !this.mobileToggle;
+  }
+
+  //retrieve the url path if the logo is clicked depending on language
+  getLogoPath() {
+    this.appService.whichLanguage;
+
+    if(this.appService.english) {
+      this.logoPath = "/en";
+    }
+    else if(this.appService.chinese) {
+      this.logoPath = "";
+    }
+    else {
+      this.logoPath = "";
+    }
+  }
+
+  //switches URL path to english version of the site
+  switchToEnglish(){
+
+    this.appService.currentURL = window.location.href;
+
+    if(this.appService.currentURL.includes("about")) {
+      this.englishPath = "/en/about";
+    }
+    else {
+      this.englishPath = "/en"
+    }
+  }
+
+  //switches URL path to chinese version of the site
+  switchToChinese(){
+
+    this.appService.currentURL = window.location.href;
+
+    if(this.appService.currentURL.includes("about")) {
+      this.chinesePath = "/about";
+    }
+    else {
+      this.chinesePath = "#"
+    }
   }
 }

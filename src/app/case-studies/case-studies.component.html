@@ -1,5 +1,5 @@
 <div class="case-studies-section">
-    <div class="container">
+    <div class="container" *ngIf="english">
         <div class="row">
             <div class="title-content">
                 <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp" style="color: #fff;">Case Studies</h2>
@@ -24,6 +24,32 @@
                          to TrueChain's infrastructure. Recently, Binance DEX listed TRUE-D84 by bridging 
                          TRUE to Binance Chain. Top stable coin projects such as PAX and MakerDAO DAI will also 
                          be brought to TrueChain in near future.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="chinese">
+        <div class="row">
+            <div class="title-content">
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp" style="color: #fff;">实例探究</h2>
+                <p class="hide-on-init" animateOnScroll animationName="animated fadeInUp">了解初链区块链目前的应用状况</p>
+            </div>
+        </div>
+        <div class="row use-cases-container">
+            <div class="col-sm-6">
+                <div class="case-study hide-on-init" animateOnScroll animationName="animated fadeIn animated-delay-1">
+                    <h3>初链作为数字资产的基础设施</h3>
+                    <p>初链不仅为去中心化的应用程序搭建基础架构，还为全球数字资产构建基础架构。最近，
+                        初链和8 Decimal Capital联合孵化了Pandaq。通过Pandaq这一资产代币化平台，
+                        位于美丽的苏梅岛上的8所房屋于2019年4月完成了资产代币化。未来将有更多资产将在初链上进行资产代币化。</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="case-study hide-on-init" animateOnScroll animationName="animated fadeIn animated-delay-2">
+                    <h3>支持交叉链资产</h3>
+                    <p>通过TrueBridge，TrueChain能够将任何区块链中的任何资产带到TrueChain的基础架构中。
+                        最近，Binance DEX通过将TRUE桥接到Binance Chain列出了TRUE-D84。 PAX和MakerDAO 
+                        DAI等顶级稳定硬币项目也将在不久的将来带入TrueChain。</p>
                 </div>
             </div>
         </div>

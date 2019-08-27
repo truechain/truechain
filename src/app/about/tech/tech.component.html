@@ -1,5 +1,5 @@
 <div class="tech-section background-primary">
-    <div class="container">
+    <div class="container" *ngIf="english">
         <div class="row">
             <div class="title-content">
                 <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">Our Technology</h2>
@@ -26,6 +26,34 @@
                     <p>We use PBFT as a fast-chain to process transactions and leave the oversight and election of PBFT to the hands of PoW nodes. 
                         Additionally, TrueChain integrates fruitchain technology into the traditional PoW protocol, i.e. fPoW, as the snailchain to 
                         make the chain even more decentralized. TrueChain has also added sharding on top of PBFT to allow for greater scalability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="chinese">
+        <div class="row">
+            <div class="title-content">
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">我们的技术</h2>
+                <p class="hide-on-init" animateOnScroll animationName="animated fadeInUp">一条适用于去中心化式应用和金融的高效安全区块链</p>
+            </div>
+        </div>
+        <div class="row tech-container">
+            <div class="col-sm-6">
+                <div class="tech first hide-on-init" animateOnScroll animationName="animated fadeIn animated-delay-1">
+                    <div class="icon-box">
+                        <i class="fas fa-balance-scale fa-5x"></i>
+                    </div>
+                    <p>许多基于单一共识机制的公链的效率不高，例如PoW或PoS。另外，虽然基于dPoS或dBFT的公链效率很高，但是在去中心化化方面存在问题。 
+                        初链使用一种名为Minerva的混合共识，将PBFT和fPoW结合起来，以解决无授权区块链面临的最大问题：去中心化与效率之间的权衡。</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="tech hide-on-init" animateOnScroll animationName="animated fadeIn animated-delay-2">
+                    <div class="icon-box">
+                        <i class="fas fa-shield-alt fa-5x"></i>
+                    </div>
+                    <p>我们使用PBFT作为快速链来处理交易，并将PBFT的监督和选举交给PoW节点。除此之外，初链还将水果链技术集成到传统的PoW算法协议中，
+                        如我们使用的fPoW算法，将其作为使链条更加去中心化的蜗牛链。 初链还在PBFT上添加了分片，以实现更高的可扩展性。</p>
                 </div>
             </div>
         </div>

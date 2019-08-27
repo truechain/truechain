@@ -8,11 +8,17 @@ import { AppService } from '../app.service';
 })
 export class DownloadComponent implements OnInit {
 
+  english: boolean = false;
+  chinese: boolean = true;
+
   constructor(private appService: AppService, element: ElementRef) { 
     appService.downloadElement = element;
   }
 
   ngOnInit() {
+    this.appService.whichLanguage();
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese;
   }
 
 }

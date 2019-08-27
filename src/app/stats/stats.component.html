@@ -3,28 +3,43 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="stats-container" animateOnScroll animationName="animated fadeInUp">
-                    <div class="stats-content">
+                    <div class="stats-content" *ngIf="english">
                         <h3><strong [countUp]="statOneVal" [options]="customOptions" [reanimateOnClick]='false'>0</strong><strong> TPS</strong></h3>
                         <hr>
                         <p>100x Faster then ETH and 100x more decentralized than DPoS Chains</p>
+                    </div>
+                    <div class="stats-content" *ngIf="chinese">
+                        <h3><strong [countUp]="statOneVal" [options]="customOptions" [reanimateOnClick]='false'>0</strong><strong> 交易数 / 每秒</strong></h3>
+                        <hr>
+                        <p>比ETH（以太坊）更快，比EOS 和TRON（波场）更安全（ETH、EOS、TRON均为智能合约平台)</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="stats-container" animateOnScroll animationName="animated fadeInUp animated-delay-2">
-                    <div class="stats-content">
+                    <div class="stats-content" *ngIf="english">
                         <h3><strong [countUp]="statThreeVal" [options]="customOptions" [reanimateOnClick]='false'>0</strong><strong>+ </strong><span class="space">&nbsp;</span></h3>
                         <hr>
                         <p>Token holders worldwide in June of 2019</p>
+                    </div>
+                    <div class="stats-content" *ngIf="chinese">
+                        <h3><strong [countUp]="statThreeValChinese" [options]="customOptions" [reanimateOnClick]='false'>0</strong><strong>万+ </strong><span class="space">&nbsp;</span></h3>
+                        <hr>
+                        <p>截至2019年6月，全球令牌持有人数超过25万人次</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="stats-container" animateOnScroll animationName="animated fadeInUp animated-delay-1">
-                    <div class="stats-content">
+                    <div class="stats-content" *ngIf="english">
                         <h3><strong>$</strong><strong [countUp]="statTwoVal" [options]="customOptions" [reanimateOnClick]='false'>0</strong> <strong> million</strong></h3>
                         <hr>
                         <p>USD trading volume per day</p>
+                    </div>
+                    <div class="stats-content" *ngIf="chinese">
+                        <h3><strong [countUp]="statTwoValChinese" [options]="customOptions" [reanimateOnClick]='false'>0</strong> <strong> 万美元</strong></h3>
+                        <hr>
+                        <p>每日交易量超过6000万美元</p>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <div class="roadmaps-section background-secondary">
-    <div class="container">
+    <div class="container" *ngIf="english">
         <div class="row">
             <div class="title-content">
                 <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">Roadmap</h2>
@@ -68,6 +68,82 @@
                                 <li>>1 Billion USD asset value issued on TrueChain and keep fast growth</li>
                                 <li>>1 Million TRUE token holders globally and keep fast growth</li>
                                 <li>Decentralized governance</li>                       
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="chinese">
+        <div class="row">
+            <div class="title-content">
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">发展历程</h2>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="center-block" >
+                <div class="roadmaps-container" #roadmapsContainer>
+                    <div class="roadmap-item right hide-on-init" #roadmapItem1 animateOnScroll animationName="animated fadeIn animated-delay-1">
+                        <div class="roadmap-text">
+                            <h3>创世纪</h3>
+                            <p class="sub">2017年9月至2018年10月</p>
+                            <ul>
+                                <li>TrueChain的PBFT联盟链发布</li>
+                                <li>完成混合共识机制设计</li>
+                                <li>Stellar - 智能合约管理引擎 - 已发布并开源</li>
+                                <li>初链Light Wallet发布</li>
+                                <li>初链的去中心化节点选举系统发布</li>
+                                <li>初链在OKex、ZB、Bithumb、HitBTC和许多其他主要交易所上市</li>
+                                <li>初链的全球令牌持有者超过10万</li>
+                                <li>混合共识框架代码开源</li>
+                                <li>发布混合共识激励机制</li>
+                                <li>初链TestNet - BetaNet发布</li>
+                                <li>初链推出首款区块链浏览器TrueScan</li>
+                                <li>开发者平台发布</li>
+                                <li>超过 10个去中心化应用在TrueChain BetaNet上运行和测试</li>                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-item left hide-on-init" #roadmapItem2 animateOnScroll animationName="animated fadeIn animated-delay-2">
+                        <div class="roadmap-text">
+                            <h3>探索新大陆</h3>
+                            <p class="sub">2018年11月至2019年12月</p>
+                            <ul dir="rtl" class="desktop">
+                                <li>设计PandaST协议</li>
+                                <li>实施第三方燃料费支付代理</li>
+                                <li>主网启动</li>
+                                <li>改革燃料费机制</li>
+                                <li>改革公链激励机制</li>
+                                <li>增加并稳定主网的哈希挖矿能力</li>
+                                <li>初链上拥有超过 100个 去中心化应用和资产令牌种类</li>
+                                <li>超过1000万美元价值的资产通过初链发行</li>
+                                <li>全球超过50万个 TRUE令牌持有者</li>
+                                <li>添加零知识证明和相关的隐私功能</li>                         
+                            </ul>
+                            <ul class="mobile">
+                                <li>设计PandaST协议</li>
+                                <li>实施第三方燃料费支付代理</li>
+                                <li>主网启动</li>
+                                <li>改革燃料费机制</li>
+                                <li>改革公链激励机制</li>
+                                <li>增加并稳定主网的哈希挖矿能力</li>
+                                <li>初链上拥有超过 100个 去中心化应用和资产令牌种类</li>
+                                <li>超过1000万美元价值的资产通过初链发行</li>
+                                <li>全球超过50万个 TRUE令牌持有者</li>
+                                <li>添加零知识证明和相关的隐私功能</li>                             
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="roadmap-item right hide-on-init" #roadmapItem3 animateOnScroll animationName="animated fadeIn animated-delay-3">
+                        <div class="roadmap-text">
+                            <h3>建设共和国</h3>
+                            <p class="sub">2020年1月起</p>
+                            <ul>
+                                <li>初链上将有超过1000个 去中心化应用和资产代币种类，并保持快速增长</li>
+                                <li>将有超过10亿美元价值的资产通过初链发行，并保持快速增长</li>
+                                <li>全球超过 100万个TRUE令牌持有者，并保持快速增长</li>
+                                <li>去中心化治理</li>                       
                             </ul>
                         </div>
                     </div>

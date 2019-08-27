@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { transition, trigger, style, animate } from '@angular/animations';
+import { AppService } from 'src/app/app.service';
 declare var particlesJS: any;
 
 @Component({
@@ -31,11 +32,18 @@ declare var particlesJS: any;
 })
 export class AboutHeroComponent implements OnInit {
 
-  constructor() { }
+  english: boolean = false;
+  chinese: boolean = true;
+
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
     //Loads the particle effects from the particle.js library
     particlesJS.load('particles-js', '../assets/particles.json');
+
+    this.appService.whichLanguage();
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese;
   }
 
 }

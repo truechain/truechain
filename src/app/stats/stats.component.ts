@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { CountUpOptions, CountUp } from 'countup.js';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-stats',
@@ -9,13 +10,19 @@ import { CountUpOptions, CountUp } from 'countup.js';
 })
 export class StatsComponent implements OnInit, AfterViewInit{
 
+  english: boolean = false;
+  chinese: boolean = true;
+
   @ViewChild('stats', {static: true}) statSection: ElementRef;
   statsPosition: number;
 
   statOneVal: number;
-  statTwoVal: number
+  statTwoVal: number;
   statThreeVal: number;
   statFourVal: number;
+
+  statTwoValChinese: number;
+  statThreeValChinese: number;
 
 
   public customOptions: CountUpOptions = {
@@ -32,9 +39,12 @@ export class StatsComponent implements OnInit, AfterViewInit{
     suffix: ''
   };
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.appService.whichLanguage();
+    this.english = this.appService.english;
+    this.chinese = this.appService.chinese;
   }
 
   ngAfterViewInit() {
@@ -51,6 +61,9 @@ export class StatsComponent implements OnInit, AfterViewInit{
       this.statTwoVal = 60;
       this.statThreeVal = 250000;
       this.statFourVal = 3000;
+
+      this.statTwoValChinese = 6000;
+      this.statThreeValChinese = 25;
     } 
   }
 }

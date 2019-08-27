@@ -5,6 +5,15 @@ import { Injectable, ViewChild, ElementRef} from '@angular/core';
 })
 export class AppService {
 
+  //currentURL
+  currentURL: string = window.location.pathname;
+
+  //Determines if the website is english
+  public english: boolean = false;
+
+  //Determines if the website is chinese
+  public chinese: boolean = true;
+
   // Elements that correlate to sections //
   public homeElement: ElementRef;
   public whatElement: ElementRef;
@@ -43,6 +52,7 @@ export class AppService {
     this.downloadOffset = this.downloadElement.nativeElement.offsetTop + 360;
   }
 
+  // resets the offsets to 0
   resetOffet() {
     this.homeOffset = 0;
     this.whatOffset = 0;
@@ -54,5 +64,30 @@ export class AppService {
     this.partnersOffset = 0;
     this.downloadOffset = 0;
   }
+
+  //gets Current URL path
+  getURL() {
+    this.currentURL = window.location.pathname;
+  }
+
+  //sets boolean value of languages depending on URL path
+  whichLanguage() {
+    this.currentURL = window.location.pathname;
+
+    if (this.currentURL.includes('/en')) {
+      this.english = true;
+      this.chinese = false;
+    }
+    else if (this.currentURL.includes('/cn')) {
+      this.english = false;
+      this.chinese = true;
+    }
+    else {
+      this.english = false;
+      this.chinese = true;
+    }
+  }
+
+
   
 }

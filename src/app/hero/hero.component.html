@@ -9,9 +9,12 @@
         <div class="col-xs-12">
           <div class="hero-content">
             <img [@enterLogo] src="../assets/truechain-logo-only-white-no-background.png" alt="TrueChain">
-            <h1 [@enterHeader]><strong style="color: #fff">TrueChain</strong></h1>
-            <p [@enterParagraph]>Building The Infrastructure For The Future of Decentralized Applications and Finance</p>
-            <a [@enterButton] href="#what"><button class="btn btn-primary btn-lg">Learn More</button></a> 
+            <h1 [@enterHeader] *ngIf="english"><strong style="color: #fff">TrueChain</strong></h1>
+            <h1 [@enterHeader] *ngIf="chinese"><strong style="color: #fff">初链 TrueChain</strong></h1>
+            <p [@enterParagraph] *ngIf="english">Building The Infrastructure For The Future of Decentralized Applications and Finance</p>
+            <p [@enterParagraph] *ngIf="chinese">建设未来去中心化应用和金融系统的基础设施</p>
+            <a [@enterButton] href="#what" *ngIf="english"><button class="btn btn-primary btn-lg">Learn More</button></a>
+            <a [@enterButton] href="#what" *ngIf="chinese"><button class="btn btn-primary btn-lg">了解更多详情</button></a>  
           </div>
         </div>
       </div>
