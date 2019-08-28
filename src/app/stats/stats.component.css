@@ -26,6 +26,9 @@
 .space {
     display: none;
 }
+.stats-content.chinese strong.reduce{
+    font-size: 30px;
+}
 
 /* mobile responsiveness */
 @media(max-width: 767px) {

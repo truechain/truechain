@@ -26,25 +26,25 @@
   <ng-container *ngIf="mobileToggle">
     <div class="container full-width" id="header-mobile-subsection" [@mobileMenuState] *ngIf="english">
       <div class="mobile-menu">
-        <a href="/en#what" class="nav-item"><strong>What are We?</strong></a>
-        <a href="/en#why" class="nav-item"><strong>Why TrueChain?</strong></a>
-        <a href="/en#use-cases" class="nav-item"><strong>Use Cases</strong></a>
-        <a href="/en#case-studies" class="nav-item"><strong>Case Studies</strong></a>
-        <a href="/en#roadmap" class="nav-item"><strong>Roadmap</strong></a>
-        <a href="/en#partners" class="nav-item"><strong>Partners</strong></a>
-        <a href="/en/about" class="nav-item"><strong>About Us</strong></a>
+        <a href="#what" class="nav-item"><strong>What are We?</strong></a>
+        <a href="#why" class="nav-item"><strong>Why TrueChain?</strong></a>
+        <a href="#use-cases" class="nav-item"><strong>Use Cases</strong></a>
+        <a href="#case-studies" class="nav-item"><strong>Case Studies</strong></a>
+        <a href="#roadmap" class="nav-item"><strong>Roadmap</strong></a>
+        <a href="#partners" class="nav-item"><strong>Partners</strong></a>
+        <a href="/about" class="nav-item"><strong>About Us</strong></a>
         <span><a href="{{englishPath}}" (click)="switchToEnglish()" [ngClass]="{'activeLanguage' : english}">English</a> / <a href="{{chinesePath}}" (click)="switchToChinese()" [ngClass]="{'activeLanguage': chinese}">Chinese</a></span>
       </div>
     </div>
     <div class="container full-width" id="header-mobile-subsection" [@mobileMenuState] *ngIf="chinese">
       <div class="mobile-menu">
-        <a href="#what" class="nav-item"><strong>我们是什么?</strong></a>
-        <a href="#why" class="nav-item"><strong>为什么选择初链</strong></a>
-        <a href="#use-cases" class="nav-item"><strong>应用实例</strong></a>
-        <a href="#case-studies" class="nav-item"><strong>实例探究</strong></a>
-        <a href="#roadmap" class="nav-item"><strong>发展历程</strong></a>
-        <a href="#partners" class="nav-item"><strong>我们的合作伙伴</strong></a>
-        <a href="/about" class="nav-item"><strong>关于我们</strong></a>
+        <a href="/cn#what" class="nav-item"><strong>我们是什么?</strong></a>
+        <a href="/cn#why" class="nav-item"><strong>为什么选择初链</strong></a>
+        <a href="/cn#use-cases" class="nav-item"><strong>应用实例</strong></a>
+        <a href="/cn#case-studies" class="nav-item"><strong>实例探究</strong></a>
+        <a href="/cn#roadmap" class="nav-item"><strong>发展历程</strong></a>
+        <a href="/cn#partners" class="nav-item"><strong>我们的合作伙伴</strong></a>
+        <a href="/cn/about" class="nav-item"><strong>关于我们</strong></a>
         <span><a href="{{englishPath}}" (click)="switchToEnglish()" [ngClass]="{'activeLanguage' : english}">英语</a> / <a href="{{chinesePath}}" (click)="switchToChinese()" [ngClass]="{'activeLanguage': chinese}">中文</a></span>
       </div>
     </div>

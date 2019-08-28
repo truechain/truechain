@@ -83,8 +83,8 @@ export class AppService {
       this.chinese = true;
     }
     else {
-      this.english = false;
-      this.chinese = true;
+      this.english = true;
+      this.chinese = false;
     }
   }
 

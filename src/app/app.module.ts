@@ -35,9 +35,9 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 const appRoutes: Routes = [
   {path: '', component: MainComponent},
-  {path: 'en', component: MainComponent},
+  {path: 'cn', component: MainComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'en/about', component: AboutComponent}
+  {path: 'cn/about', component: AboutComponent}
 ];
 
 @NgModule({

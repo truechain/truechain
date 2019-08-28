@@ -83,10 +83,10 @@ export class HeaderComponent implements OnInit{
   getLogoPath() {
     this.appService.whichLanguage;
 
-    if(this.appService.english) {
-      this.logoPath = "/en";
+    if(this.appService.chinese) {
+      this.logoPath = "/cn";
     }
-    else if(this.appService.chinese) {
+    else if(this.appService.english) {
       this.logoPath = "";
     }
     else {
@@ -101,10 +101,10 @@ export class HeaderComponent implements OnInit{
     this.appService.currentURL = window.location.href;
 
     if(this.appService.currentURL.includes("about")) {
-      this.englishPath = "/en/about";
+      this.englishPath = "/about";
     }
     else {
-      this.englishPath = "/en"
+      this.englishPath = "#"
     }
   }
 
@@ -114,10 +114,10 @@ export class HeaderComponent implements OnInit{
     this.appService.currentURL = window.location.href;
 
     if(this.appService.currentURL.includes("about")) {
-      this.chinesePath = "/about";
+      this.chinesePath = "/cn/about";
     }
     else {
-      this.chinesePath = "#"
+      this.chinesePath = "/cn"
     }
   }
 
