@@ -3,6 +3,10 @@ jQuery(document).ready(function ($) {
 
     var currentURL = window.location.href;
 
+    const sleep = (milliseconds) => {
+        return new Promise(resolve => setTimeout(resolve, milliseconds))
+      }
+
     //Smooth Scrolling for navigation with offset for header
     $(function() {
             $('.nav-tabs > .main, .nav-tabs > .main > a').click(function (e) {
@@ -27,6 +31,7 @@ jQuery(document).ready(function ($) {
             return false;
         });
       });
+      
     //Smooth scrolling for buttons with offset for header
     $(function() {
         if (window.innerWidth > 991) {
@@ -75,16 +80,25 @@ jQuery(document).ready(function ($) {
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             
             $('html,body').stop().animate({
-            scrollTop: target.offset().top - 98 //offsets for fixed header
+                scrollTop: target.offset().top - 98 //offsets for fixed header
             }, 'linear');
         }
+        // On mobile, waits until page is loaded to scroll to anchor. This is only if link goes to seperate page.
         else {
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            
-            $('html,body').stop().animate({
-            scrollTop: target.offset().top //offsets for fixed header
-            }, 'linear');
+            scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            sleep(700).then(() => {
+                $(function() {
+                    // your current click function
+                    $('html,body').stop().animate({
+                        scrollTop: target.offset().top //offsets for fixed header
+                    }, 800);
+                });
+              })
         }
         return false; 
     });
 });
+
