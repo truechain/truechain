@@ -5,7 +5,7 @@
       <div class="row">
         <!--Logo section-->
         <div class="col-xs-2 logo-container">
-          <div class="logo"> 
+          <div class="logo">
             <a href="{{logoPath}}">
               <img [@logoBlackState]='state' src="../assets/truechain-logo-black.png">
               <img [@logoWhiteState]='state' src="../assets/truechain-logo-white.png">
@@ -47,15 +47,15 @@
                   ><strong>About Us</strong></a>
                 </li>
                 <li class="lang">
-                  <span><a href="{{englishPath}}" 
+                  <span><a href="{{englishPath}}"
                           [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                           (click)="switchToEnglish()"
                   >EN</a></span>
-                  <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span> 
-                  <span><a href="{{chinesePath}}" 
+                  <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                  <span><a href="{{chinesePath}}"
                           [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                           (click)="switchToChinese()"
-                  >CN</a></span>
+                  >中</a></span>
                 </li>
               </ul>
               <ul class="nav nav-tabs" *ngIf="chinese">
@@ -88,15 +88,15 @@
                     ><strong>关于我们</strong></a>
                   </li>
                   <li class="lang">
-                    <span><a href="{{englishPath}}" 
+                    <span><a href="{{englishPath}}"
                             [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                             (click)="switchToEnglish()"
                     >EN</a></span>
-                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span> 
-                    <span><a href="{{chinesePath}}" 
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{chinesePath}}"
                             [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                             (click)="switchToChinese()"
-                    >CN</a></span>
+                    >中</a></span>
                   </li>
                 </ul>
             </div>

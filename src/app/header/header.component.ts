@@ -6,7 +6,7 @@ import { AppService } from '../app.service';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  animations:[ 
+  animations:[
     trigger('divState', [
       state('active', style({
         'background-color': 'rgba(255, 255, 255, 1)'
@@ -20,7 +20,7 @@ import { AppService } from '../app.service';
     trigger('logoBlackState', [
       state('inactive', style({
         'opacity': '0'
-      })), 
+      })),
       state('active', style({
         'opacity': '1'
       }))
@@ -28,7 +28,7 @@ import { AppService } from '../app.service';
     trigger('logoWhiteState', [
       state('inactive', style({
         'opacity': '1'
-      })), 
+      })),
       state('active', style({
         'opacity': '0'
       }))
@@ -70,7 +70,7 @@ export class HeaderComponent implements OnInit{
       this.aboutPage = true;
     }
     else {
-      this.aboutPage = false;      
+      this.aboutPage = false;
     }
 
     this.english = this.appService.english;
@@ -97,7 +97,7 @@ export class HeaderComponent implements OnInit{
 
   //switches URL path to english version of the site
   switchToEnglish(){
-
+    window.localStorage.setItem('lang','en')
     this.appService.currentURL = window.location.href;
 
     if(this.appService.currentURL.includes("about")) {
@@ -110,7 +110,7 @@ export class HeaderComponent implements OnInit{
 
   //switches URL path to chinese version of the site
   switchToChinese(){
-
+    window.localStorage.setItem('lang', 'cn')
     this.appService.currentURL = window.location.href;
 
     if(this.appService.currentURL.includes("about")) {
@@ -122,39 +122,39 @@ export class HeaderComponent implements OnInit{
   }
 
 
-  // Hostlister dynamically tracks the window scroll position. 
+  // Hostlister dynamically tracks the window scroll position.
   // Below a certain point, this will switch the state from 'active' to 'inactive' and vise versa.
   // Also, this will highlight the current section in the navbar.
   @HostListener ('window:scroll', ['$event'])
-    onWindowScroll($event: any): void {
-      const componentPosition = 1;
-      const scrollPosition = window.pageYOffset;
+  onWindowScroll($event: any): void {
+    const componentPosition = 1;
+    const scrollPosition = window.pageYOffset;
 
-      if (scrollPosition >= componentPosition) {
-        this.state = 'active'
-      } 
-      else {
-        this.state = 'inactive'
-      }
-  
-      if (scrollPosition >= this.appService.homeOffset && scrollPosition < this.appService.whatOffset) {
-        this.currentActive = 1;
-      } else if (scrollPosition >= this.appService.whatOffset && scrollPosition < this.appService.whyOffset) {
-        this.currentActive = 2;
-      } else if (scrollPosition >= this.appService.whyOffset && scrollPosition < this.appService.useCasesOffset) {
-        this.currentActive = 3;
-      } else if (scrollPosition >= this.appService.useCasesOffset && scrollPosition < this.appService.caseStudiesOffset) {
-        this.currentActive = 4;
-      } else if (scrollPosition >= this.appService.caseStudiesOffset && scrollPosition < this.appService.roadmapOffset) {
-        this.currentActive = 5;
-      } else if (scrollPosition >= this.appService.roadmapOffset && scrollPosition < this.appService.partnersOffset) {
-        this.currentActive = 6;
-      } else if (scrollPosition >= this.appService.partnersOffset) {
-        this.currentActive = 7;
-      } else {
-        this.currentActive = 0;
-      }
-      
+    if (scrollPosition >= componentPosition) {
+      this.state = 'active'
     }
+    else {
+      this.state = 'inactive'
+    }
+
+    if (scrollPosition >= this.appService.homeOffset && scrollPosition < this.appService.whatOffset) {
+      this.currentActive = 1;
+    } else if (scrollPosition >= this.appService.whatOffset && scrollPosition < this.appService.whyOffset) {
+      this.currentActive = 2;
+    } else if (scrollPosition >= this.appService.whyOffset && scrollPosition < this.appService.useCasesOffset) {
+      this.currentActive = 3;
+    } else if (scrollPosition >= this.appService.useCasesOffset && scrollPosition < this.appService.caseStudiesOffset) {
+      this.currentActive = 4;
+    } else if (scrollPosition >= this.appService.caseStudiesOffset && scrollPosition < this.appService.roadmapOffset) {
+      this.currentActive = 5;
+    } else if (scrollPosition >= this.appService.roadmapOffset && scrollPosition < this.appService.partnersOffset) {
+      this.currentActive = 6;
+    } else if (scrollPosition >= this.appService.partnersOffset) {
+      this.currentActive = 7;
+    } else {
+      this.currentActive = 0;
+    }
+
+  }
 
 }
