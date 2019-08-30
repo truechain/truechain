@@ -64,6 +64,41 @@ i {
     padding-right: 8px;
     pointer-events: none;
 }
+/* developer styles */
+.developer {
+    text-align: center !important;
+    margin-bottom: 40px;
+}
+.developer h5 {
+    padding-bottom: 10px
+}
+.developer-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.developer-items a {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.developer-items button {
+    border-color: #000;
+    border-width: 2px;
+    width: 100px;
+    height: 80px;
+}
+.developer-items i {
+    margin-bottom: 5px;
+}
+.developer-items button:hover {
+    border-color: #fff;
+    transition-duration: .3s;
+}
+p {
+    font-size: 14px !important;
+    margin-bottom: 0;
+}
 
 
 /* Social media styles */
@@ -112,28 +147,6 @@ i {
 .tech-guides h5 {
     padding-bottom: 20px
 }
-
-/*
-.app-content {
-    margin-bottom: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center !important;
-}
-.app-buttons a {
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.app-buttons button{
-    border-color: #000;
-    width: 85px;
-    height: 85px;
-}
-.app-buttons button:hover {
-    border-color: #fff;
-    transition-duration: .3s;
-}*/
 .mining-buttons {
     display: flex;
     flex-flow: row;
@@ -233,6 +246,15 @@ p {
 }
 
 @media(max-width: 767px) {
+
+    .footer .developer-items a{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .footer .developer-items button{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .footer-bottom-content .row {
         display: flex;
         flex-flow: column-reverse;

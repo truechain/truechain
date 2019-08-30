@@ -10,8 +10,47 @@
               <i class="fa fa-chevron-up fa-2x "></i>
             </a>
           </div>
+          <!-- Footer header -->
           <div class="footer-header">
             <img src="../assets/truechain-logo-footer.png" alt="truechain logo footer">
+          </div>
+          <!--developer section -->
+          <div class="col-12">
+              <div class="developer">
+                <!--developer items-->
+                <div class="developer-content">
+                  <h5 *ngIf="english">Developer</h5>
+                  <h5 *ngIf="chinese">开发者</h5>
+                  <div class="developer-items">
+                    <a href="https://stellar.truechain.pro" target="_blank">
+                      <button class="btn btn-primary">
+                        <i class="fas fa-signal fa-2x"></i>
+                        <p>Sellar</p>
+                      </button>
+                    </a>
+                    <a href="http://doc.truechain.pro/center-en/1091414" target="_blank">
+                      <button class="btn btn-primary">
+                        <i class="far fa-file-alt fa-2x"></i>
+                        <p *ngIf="english">Document</p>
+                        <p *ngIf="chinese">文档中心</p>
+                      </button>
+                    </a>
+                    <a href="https://www.truescan.net/" target="_blank">
+                      <button class="btn btn-primary">
+                        <i class="fas fa-chart-area fa-2x"></i>
+                        <p>Truescan</p>
+                      </button>
+                    </a>
+                    <a href="https://dev.truedapp.net/" target="_blank">
+                      <button class="btn btn-primary">
+                        <i class="fas fa-code fa-2x"></i>
+                        <p *ngIf="english">Developer</p>
+                        <p *ngIf="chinese">开发者平台</p>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
           </div>
           <!--Social media-->
           <div class="col-lg-6">
