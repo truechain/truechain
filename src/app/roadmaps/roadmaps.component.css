@@ -200,37 +200,41 @@
   }
   @media (max-width: 621px) {
     .roadmaps-container::after {
-        bottom: 16.5em;
+        bottom: 12.1em;
     }
   }
   @media (max-width: 421px) {
     .roadmaps-container::after {
-        bottom: 18em;
+        bottom: 16em;
     }
   } 
   @media (max-width: 401px) {
     .roadmaps-container::after {
-        bottom: 20.6em;
+        bottom: 16.6em;
+    }
+  } 
+  @media (max-width: 480px) {
+    .roadmaps-container::after {
+        bottom: 16.3em;
     }
   } 
   @media (max-width: 359px) {
     .roadmaps-container::after {
-        bottom: 22em;
+        bottom: 17em;
     }
   } 
   @media (max-width: 337px) {
     .roadmaps-container::after {
-        bottom: 25.2em;
+        bottom: 18em;
     }
-  } 
-
+  }
   @media (min-width: 337px) and (max-width: 351px) {
     .roadmaps-container::after {
-        bottom: 26.2em;
+        bottom: 17.8em;
     }
   } 
   @media (max-width: 325px) {
     .roadmaps-container::after {
-        bottom: 28em;
+        bottom: 20.8em;
     }
   } 

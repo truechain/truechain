@@ -22,10 +22,23 @@
                   <h5 *ngIf="english">Developer</h5>
                   <h5 *ngIf="chinese">开发者</h5>
                   <div class="developer-items">
+                    <a href="https://arxiv.org/abs/1805.01457" target="_blank">
+                      <button class="btn btn-primary">
+                        <i class="far fa-file fa-2x"></i>
+                        <p *ngIf="english">Yellow Paper</p>
+                        <p *ngIf="chinese">黄纸</p>
+                      </button>
+                    </a>
+                    <a href="https://github.com/truechain" target="_blank">
+                      <button class="btn btn-primary">
+                        <i class="fab fa-github fa-2x"></i>
+                        <p>GitHub</p>
+                      </button>
+                    </a>
                     <a href="https://stellar.truechain.pro" target="_blank">
                       <button class="btn btn-primary">
                         <i class="fas fa-signal fa-2x"></i>
-                        <p>Sellar</p>
+                        <p>Stellar</p>
                       </button>
                     </a>
                     <a href="http://doc.truechain.pro/center-en/1091414" target="_blank">
