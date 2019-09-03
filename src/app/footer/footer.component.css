@@ -120,8 +120,8 @@ p {
 }
 
 .social-media-row a {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
     border: #000 2px solid;
     padding: 15px;
     transition-duration: .5s;
