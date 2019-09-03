@@ -14,6 +14,7 @@ p {
 img {
     width: 50px;
     height: 50px;
+    padding: 10px;
     object-fit: contain;
 }
 i {
@@ -110,12 +111,12 @@ p {
 .social-content {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center 
+    justify-content: center
 }
 .social-media-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .social-media-row a {
