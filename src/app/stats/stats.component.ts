@@ -58,11 +58,11 @@ export class StatsComponent implements OnInit, AfterViewInit{
 
     if (scrollPosition >= componentPosition) {
       this.statOneVal = 1200;
-      this.statTwoVal = 60;
+      this.statTwoVal = 20;
       this.statThreeVal = 250000;
       this.statFourVal = 3000;
 
-      this.statTwoValChinese = 6000;
+      this.statTwoValChinese = 2000;
       this.statThreeValChinese = 25;
     } 
   }
