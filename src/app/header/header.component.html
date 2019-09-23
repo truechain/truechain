@@ -43,7 +43,7 @@
                   ><strong>Partners</strong></a>
                 </li>
                 <li>
-                  <a href="/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                  <a routerLink="/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                   ><strong>About Us</strong></a>
                 </li>
                 <li class="lang">
@@ -84,7 +84,7 @@
                     ><strong>生态和合作伙伴</strong></a>
                   </li>
                   <li>
-                    <a href="/cn/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    <a routerLink="/cn/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                     ><strong>关于我们</strong></a>
                   </li>
                   <li class="lang">
