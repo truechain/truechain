@@ -33,7 +33,8 @@
         <a href="#roadmap" class="nav-item"><strong>Roadmap</strong></a>
         <a href="#partners" class="nav-item"><strong>Partners</strong></a>
         <a routerLink="/about" class="nav-item"><strong>About Us</strong></a>
-        <span><a href="{{englishPath}}" (click)="switchToEnglish()" [ngClass]="{'activeLanguage' : english}">EN</a> / <a href="{{chinesePath}}" (click)="switchToChinese()" [ngClass]="{'activeLanguage': chinese}">中</a></span>
+        <span><a href="{{englishPath}}" (click)="switchToEnglish()" [ngClass]="{'activeLanguage' : english}">EN</a> / <a href="{{chinesePath}}" (click)="switchToChinese()" [ngClass]="{'activeLanguage': chinese}">中</a>
+          / <a href="{{koreanPath}}" (click)="switchToKorean()" [ngClass]="{'activeLanguage': korean}">KR</a></span>
       </div>
     </div>
     <div class="container full-width" id="header-mobile-subsection" [@mobileMenuState] *ngIf="chinese">
@@ -45,8 +46,22 @@
         <a href="/cn#roadmap" class="nav-item"><strong>发展路径</strong></a>
         <a href="/cn#partners" class="nav-item"><strong>生态和合作伙伴</strong></a>
         <a routerLink="/cn/about" class="nav-item"><strong>关于我们</strong></a>
-        <span><a href="{{englishPath}}" (click)="switchToEnglish()" [ngClass]="{'activeLanguage' : english}">EN</a> / <a href="{{chinesePath}}" (click)="switchToChinese()" [ngClass]="{'activeLanguage': chinese}">中</a></span>
+        <span><a href="{{englishPath}}" (click)="switchToEnglish()" [ngClass]="{'activeLanguage' : english}">EN</a> / <a href="{{chinesePath}}" (click)="switchToChinese()" [ngClass]="{'activeLanguage': chinese}">中</a> 
+          / <a href="{{koreanPath}}" (click)="switchToKorean()" [ngClass]="{'activeLanguage': korean}">KR</a></span>
       </div>
+    </div>
+    <div class="container full-width" id="header-mobile-subsection" [@mobileMenuState] *ngIf="korean">
+        <div class="mobile-menu">
+          <a href="/cn#what" class="nav-item"><strong>우리는 누구 인가요?</strong></a>
+          <a href="/cn#why" class="nav-item"><strong>왜 TrueChain을 사용해야 하나요?</strong></a>
+          <a href="/cn#use-cases" class="nav-item"><strong>사용 사례</strong></a>
+          <a href="/cn#case-studies" class="nav-item"><strong>연구 사례</strong></a>
+          <a href="/cn#roadmap" class="nav-item"><strong>로드맵</strong></a>
+          <a href="/cn#partners" class="nav-item"><strong>파트너 및 투자자</strong></a>
+          <a routerLink="/cn/about" class="nav-item"><strong>회사 소개</strong></a>
+          <span><a href="{{englishPath}}" (click)="switchToEnglish()" [ngClass]="{'activeLanguage' : english}">EN</a> / <a href="{{chinesePath}}" (click)="switchToChinese()" [ngClass]="{'activeLanguage': chinese}">中</a> 
+            / <a href="{{koreanPath}}" (click)="switchToKorean()" [ngClass]="{'activeLanguage': korean}">KR</a></span>
+        </div>
     </div>
   </ng-container>
 </header>

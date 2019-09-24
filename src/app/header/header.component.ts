@@ -137,10 +137,10 @@ export class HeaderComponent implements OnInit{
     this.appService.currentURL = window.location.href;
 
     if(this.appService.currentURL.includes("about")) {
-      this.chinesePath = "/kr/about";
+      this.koreanPath = "/kr/about";
     }
     else {
-      this.chinesePath = "/kr"
+      this.koreanPath = "/kr"
     }
   }
 
