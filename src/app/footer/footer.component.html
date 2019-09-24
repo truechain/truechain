@@ -21,12 +21,14 @@
             <div class="developer-content">
               <h5 *ngIf="english">Developer</h5>
               <h5 *ngIf="chinese">开发者</h5>
+              <h5 *ngIf="korean">개발자</h5>
               <div class="developer-items">
                 <a href="https://arxiv.org/abs/1805.01457" target="_blank">
                   <button class="btn btn-primary">
                     <i class="far fa-file fa-2x"></i>
                     <p *ngIf="english">Yellow Paper</p>
                     <p *ngIf="chinese">黄皮书</p>
+                    <p *ngIf="korean">노란 종이</p>
                   </button>
                 </a>
                 <a href="https://github.com/truechain" target="_blank">
@@ -46,6 +48,7 @@
                     <i class="far fa-file-alt fa-2x"></i>
                     <p *ngIf="english">Document</p>
                     <p *ngIf="chinese">文档中心</p>
+                    <p *ngIf="korean">문서</p>
                   </button>
                 </a>
                 <a href="https://www.truescan.net/" target="_blank">
@@ -59,6 +62,7 @@
                     <i class="fas fa-code fa-2x"></i>
                     <p *ngIf="english">Developer</p>
                     <p *ngIf="chinese">开发者平台</p>
+                    <p *ngIf="korean">개발자</p>
                   </button>
                 </a>
               </div>
@@ -73,6 +77,7 @@
                 <!--<img src="../assets/truechain-logo-footer.png" alt="truechain logo footer"><span> Official SNS Platform</span>-->
                 <h5 *ngIf="english">Official SNS Platform</h5>
                 <h5 *ngIf="chinese">社交平台</h5>
+                <h5 *ngIf="korean">공식 SNS 플랫폼</h5>
               </div>
               <div class="social-media-row">
                 <a href="https://twitter.com/truechaingroup/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
@@ -93,6 +98,7 @@
             <div class="mining-content">
               <h5 *ngIf="english">TrueChain Mining Guides</h5>
               <h5 *ngIf="chinese">矿工指南</h5>
+              <h5 *ngIf="korean">TrueChain 채굴가이드</h5>
               <div class="mining-buttons row">
                 <a
                   href="http://doc.truechain.pro/center-en/1095871"
@@ -123,6 +129,7 @@
                     <img src="../assets/icon/miner_3x.png" alt="" />
                     <p *ngIf="chinese">矿工</p>
                     <p *ngIf="english">Miner</p>
+                    <p *ngIf="korean">갱부</p>
                   </button>
                 </a>
                 <a
@@ -134,6 +141,7 @@
                     <img src="../assets/icon/pool_3x.png" alt="" />
                     <p *ngIf="chinese">矿池</p>
                     <p *ngIf="english">Pool</p>
+                    <p *ngIf="korean">깊은 곳</p>
                   </button>
                 </a>
               </div>
@@ -166,6 +174,17 @@
           </div>
           <div class="col-sm-3">
             <span>站点地图: </span><a href="https://www.truechain.pro/sitemap.xml">XML</a>
+          </div>
+        </div>
+        <div class="row" *ngIf="korean">
+          <div class="col-sm-5">
+            <span>모든 저작권은 TRUECHAIN FOUNDATION LTD. 에게 있습니다</span>
+          </div>
+          <div class="col-sm-4">
+            <span>연락망:</span><a href="mailto:partner@truechain.pro">partner@truechain.pro</a>
+          </div>
+          <div class="col-sm-3">
+            <span>Sitemap: </span><a href="https://www.truechain.pro/sitemap.xml">XML</a>
           </div>
         </div>
       </div>

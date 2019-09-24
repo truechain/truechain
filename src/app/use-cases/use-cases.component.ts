@@ -10,6 +10,7 @@ export class UseCasesComponent implements OnInit {
 
   english: boolean = false;
   chinese: boolean = true;
+  korean: boolean = false;
 
   constructor(private appService: AppService, element: ElementRef) { 
     this.appService.useCasesElement = element;
@@ -19,5 +20,6 @@ export class UseCasesComponent implements OnInit {
     this.appService.whichLanguage();
     this.english = this.appService.english;
     this.chinese = this.appService.chinese;
+    this.korean = this.appService.korean;
   }
 }

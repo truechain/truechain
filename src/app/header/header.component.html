@@ -56,6 +56,11 @@
                           [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                           (click)="switchToChinese()"
                   >中</a></span>
+                  <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                  <span><a href="{{koreanPath}}"
+                    [ngClass]="{ 'activeLanguage': korean, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    (click)="switchToKorean()"
+                  >KR</a></span>
                 </li>
               </ul>
               <ul class="nav nav-tabs" *ngIf="chinese">
@@ -97,6 +102,57 @@
                             [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
                             (click)="switchToChinese()"
                     >中</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{koreanPath}}"
+                      [ngClass]="{ 'activeLanguage': korean, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                      (click)="switchToKorean()"
+                    >KR</a></span>
+                  </li>
+                </ul>
+                <ul class="nav nav-tabs" *ngIf="korean">
+                  <li class="main">
+                    <a href="/kr#what" [ngClass]="{'active': currentActive === 2 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>우리는 누구 인가요?</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#why" [ngClass]="{'active': currentActive === 3 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>왜 TrueChain을 사용해야 하나요?</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#use-cases" [ngClass]="{'active': currentActive === 4 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>사용 사례</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#case-studies" [ngClass]="{'active': currentActive === 5 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>연구 사례</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#roadmap" [ngClass]="{'active': currentActive === 6 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>로드맵</strong></a>
+                  </li>
+                  <li class="main">
+                    <a href="/kr#partners" [ngClass]="{'active': currentActive === 7 && !aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>파트너 및 투자자</strong></a>
+                  </li>
+                  <li>
+                    <a href="/kr/about" [ngClass]="{'activeAbout': aboutPage, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                    ><strong>회사 소개</strong></a>
+                  </li>
+                  <li class="lang">
+                    <span><a href="{{englishPath}}"
+                            [ngClass]="{'activeLanguage': english, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToEnglish()"
+                    >EN</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{chinesePath}}"
+                            [ngClass]="{ 'activeLanguage': chinese, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                            (click)="switchToChinese()"
+                    >中</a></span>
+                    <span [ngClass]="{'navTop': state == 'inactive', 'navNotTop': state == 'active'}"> / </span>
+                    <span><a href="{{koreanPath}}"
+                      [ngClass]="{ 'activeLanguage': korean, 'navTop': state == 'inactive', 'navNotTop': state == 'active'}"
+                      (click)="switchToKorean()"
+                    >KR</a></span>
                   </li>
                 </ul>
             </div>

@@ -9,6 +9,10 @@
                 <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">应用实例</h2>
                 <p class="hide-on-init" animateOnScroll animationName="animated fadeInUp">快速发展的应用生态</p>
             </div>
+            <div class="title-content" *ngIf="korean">
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp">사용 사례</h2>
+                <p class="hide-on-init" animateOnScroll animationName="animated fadeInUp">빠르게 성장하는 생태계 안</p>
+            </div>
         </div>
         <div class="row use-cases-container" *ngIf="english">
             <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInLeft animated-delay-2">
@@ -98,6 +102,50 @@
                 <p>TrueBridge, Smartins, Nest, Traceability, Mixmarvel, PandaST Protocol</p>
             </div>
         </div>
+        <div class="row use-cases-container" *ngIf="korean">
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInLeft animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-laptop-code fa-4x"></i>
+                </div>
+                <h3>블록체인 브라우저</h3>
+                <p> TrueScan, TrueLens</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-gamepad fa-4x"></i>
+                </div>
+                <h3>게임</h3>
+                <p>BC.GAME, AIPACA, TrueHeart Game, TrueCard, TrueHonor Red Packet</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInRight animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-mobile-alt fa-4x"></i>
+                </div>
+                <h3>기업 Dapps</h3>
+                <p>Pickus, Base.io, True Art, Rose Chain</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInLeft animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-coins fa-4x"></i>
+                </div>
+                <h3>Wallet</h3>
+                <p>True Wallet 4.0, Meta True, Money Safe, GreenBelt</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
+                <div class="icon-box">
+                    <i class="fab fa-connectdevelop fa-4x"></i>
+                </div>
+                <h3>토큰화</h3>
+                <p>Pandaq, DigiST</p>
+            </div>
+            <div class="use-case hide-on-init" animateOnScroll animationName="animated fadeInRight animated-delay-2">
+                <div class="icon-box">
+                    <i class="fas fa-layer-group fa-4x"></i>
+                </div>
+                <h3>계층 2인프라</h3>
+                <p>TrueBridge, Smartins, Nest, Traceability, Mixmarvel, PandaST Protocol</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12">
                 <div class="use-cases-button hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
@@ -106,6 +154,9 @@
                     </a>
                     <a href="#case-studies" *ngIf="chinese">
                         <button class="btn btn-secondary btn-lg">了解更多详情</button>
+                    </a>
+                    <a href="#case-studies" *ngIf="korean">
+                        <button class="btn btn-secondary btn-lg">더 알아보기</button>
                     </a>
                 </div>
             </div>

@@ -12,6 +12,7 @@ export class StatsComponent implements OnInit, AfterViewInit{
 
   english: boolean = false;
   chinese: boolean = true;
+  korean: boolean = false;
 
   @ViewChild('stats', {static: true}) statSection: ElementRef;
   statsPosition: number;
@@ -23,6 +24,8 @@ export class StatsComponent implements OnInit, AfterViewInit{
 
   statTwoValChinese: number;
   statThreeValChinese: number;
+
+  statThreeValKorean: number;
 
 
   public customOptions: CountUpOptions = {
@@ -45,6 +48,7 @@ export class StatsComponent implements OnInit, AfterViewInit{
     this.appService.whichLanguage();
     this.english = this.appService.english;
     this.chinese = this.appService.chinese;
+    this.korean = this.appService.korean;
   }
 
   ngAfterViewInit() {
@@ -64,6 +68,8 @@ export class StatsComponent implements OnInit, AfterViewInit{
 
       this.statTwoValChinese = 2000;
       this.statThreeValChinese = 25;
+
+      this.statThreeValKorean = 2;
     } 
   }
 }

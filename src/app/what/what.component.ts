@@ -10,6 +10,7 @@ export class WhatComponent implements OnInit {
 
   english: boolean = false;
   chinese: boolean = true;
+  korean: boolean = false;
 
   constructor(private appService: AppService, element: ElementRef) { 
     this.appService.whatElement = element;
@@ -19,5 +20,6 @@ export class WhatComponent implements OnInit {
     this.appService.whichLanguage();
     this.english = this.appService.english;
     this.chinese = this.appService.chinese;
+    this.korean = this.appService.korean;
   }
 }

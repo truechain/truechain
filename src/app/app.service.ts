@@ -9,10 +9,13 @@ export class AppService {
   currentURL: string = window.location.pathname;
 
   //Determines if the website is english
-  public english: boolean = false;
+  public english: boolean = true;
 
   //Determines if the website is chinese
-  public chinese: boolean = true;
+  public chinese: boolean = false;
+
+  //Determines if the website is korean
+  public korean: boolean = false;
 
   // Elements that correlate to sections //
   public homeElement: ElementRef;
@@ -77,14 +80,22 @@ export class AppService {
     if (this.currentURL.includes('/en')) {
       this.english = true;
       this.chinese = false;
+      this.korean = false;
     }
     else if (this.currentURL.includes('/cn')) {
       this.english = false;
       this.chinese = true;
+      this.korean = false;
+    }
+    else if (this.currentURL.includes('/kr')) {
+      this.english = false;
+      this.chinese = false;
+      this.korean = true;
     }
     else {
       this.english = true;
       this.chinese = false;
+      this.korean = false;
     }
   }
 

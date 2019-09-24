@@ -10,6 +10,7 @@ export class FooterComponent implements OnInit {
 
   english: boolean = false;
   chinese: boolean = true;
+  korean: boolean = false;
  
   constructor(private appService: AppService) { }
 
@@ -17,5 +18,6 @@ export class FooterComponent implements OnInit {
     this.appService.whichLanguage();
     this.english = this.appService.english;
     this.chinese = this.appService.chinese;
+    this.korean = this.appService.korean;
   }
 }

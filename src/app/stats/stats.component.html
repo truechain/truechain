@@ -13,6 +13,11 @@
                         <hr>
                         <p>比以太坊快100倍，比DPoS公链去中心化100倍</p>
                     </div>
+                    <div class="stats-content korean" *ngIf="korean">
+                        <h3><strong [countUp]="statOneVal" [options]="customOptions" [reanimateOnClick]='false'>0</strong><strong> TPS</strong></h3>
+                        <hr>
+                        <p>ETH보다 100배 빠르며 DPoS 체인보다 100배 더 탈중앙화되어 있습니다.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -27,6 +32,11 @@
                         <hr>
                         <p>截至2019年6月，全球用户社区人数超过25万</p>
                     </div>
+                    <div class="stats-content korean" *ngIf="korean">
+                        <h3><strong [countUp]="statThreeVal" [options]="customOptions" [reanimateOnClick]='false'>0</strong><strong> 명 이상</strong><span class="space">&nbsp;</span></h3>
+                        <hr>
+                        <p>2019년 6월 기준, 세계 토큰 보유자들 </p>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -40,6 +50,11 @@
                         <h3><strong [countUp]="statTwoValChinese" [options]="customOptions" [reanimateOnClick]='false'>0</strong> <strong class="reduce"> 万美元</strong></h3>
                         <hr>
                         <p>每日交易量超过2000万美元</p>
+                    </div>
+                    <div class="stats-content korean" *ngIf="korean">
+                        <h3><strong [countUp]="statTwoValKorean" [options]="customOptions" [reanimateOnClick]='false'>0</strong> <strong class="reduce"> 천만 달러</strong></h3>
+                        <hr>
+                        <p>일일 달러 거래량</p>
                     </div>
                 </div>
             </div>

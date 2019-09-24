@@ -6,6 +6,8 @@
                     Why TrueChain?</h2>
                 <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp" *ngIf="chinese">
                     为什么选择初链</h2>
+                <h2 class="hide-on-init" animateOnScroll animationName="animated fadeInUp" *ngIf="korean">
+                    왜 TrueChain을 사용해야 하나요? </h2>
             </div>
         </div>
         <div class="why-container" *ngIf="english">
@@ -91,6 +93,44 @@
                 </div>
             </div>
         </div>
+        <div class="why-container" *ngIf="korean">
+            <div class="row">
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp">
+                    <div class="why-item">
+                        <div class="why-content">
+                            <h3>스트림라인 블록체인</h3>
+                            <p>안전한 샤딩과 무허가 PBFT-fPoW 하이브리드 합의를 통해 무허가 블록체인의 효율성과 분산화 사이의 충돌은 TrueChain에 의해 해결됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-1">
+                    <div class="why-item">
+                        <div class="why-content">
+                            <h3>하이브리드 합의 인센티브 모델</h3>
+                            <p>TrueChain은 세계 최초의 블록체인 기술 및 보상과 관련하여 앞으로 경제적 인식을 높일 하이브리드 합의 관리를 위한 인센티브 모델을 설계한 최초의 기업입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-2">
+                    <div class="why-item">
+                        <div class="why-content">
+                            <h3>강력한 글로벌 개발자 커뮤니티</h3>
+                            <p>새로운 세대의 무허가 블록체인 중에서 TrueChain은 중국에서 가장 크고 세계에서 가장 빠르게 성장하고 있는 개발자 커뮤니티를 보유하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-3">
+                    <div class="why-item last">
+                        <div class="why-content">
+                            <h3>Impossible Triangle 해결</h3>
+                            <p>TrueChain은 공개형 체인 공간에서 가장 중요한 문제인 "Impossible Triangle"을 해결한 현존하는 최초의 3세대 공개형 체인입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12">
                 <div class="why-button hide-on-init" animateOnScroll animationName="animated fadeInUp animated-delay-3">
@@ -99,6 +139,9 @@
                     </a>
                     <a href="#use-cases" *ngIf="chinese">
                         <button class="btn btn-secondary btn-lg">了解更多详情</button>
+                    </a>
+                    <a href="#use-cases" *ngIf="korean">
+                        <button class="btn btn-secondary btn-lg">더 알아보기</button>
                     </a>
                 </div>
             </div>

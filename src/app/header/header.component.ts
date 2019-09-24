@@ -49,11 +49,17 @@ export class HeaderComponent implements OnInit{
   // boolean to toggle language to chinese
   chinese: boolean;
 
+  // boolean to toggle language to korean
+  korean: boolean;
+
   // path for engish version of the site
   englishPath: string;
 
   //path for chinese version of the site
   chinesePath: string;
+
+  //path for korean version of the site
+  koreanPath: string;
 
   //Url path for logo link
   logoPath: string = '';
@@ -75,6 +81,7 @@ export class HeaderComponent implements OnInit{
 
     this.english = this.appService.english;
     this.chinese = this.appService.chinese;
+    this.korean = this.appService.korean;
 
     this.getLogoPath();
   }
@@ -85,6 +92,9 @@ export class HeaderComponent implements OnInit{
 
     if(this.appService.chinese) {
       this.logoPath = "/cn";
+    }
+    else if(this.appService.korean) {
+      this.logoPath = "kr";
     }
     else if(this.appService.english) {
       this.logoPath = "";
@@ -118,6 +128,19 @@ export class HeaderComponent implements OnInit{
     }
     else {
       this.chinesePath = "/cn"
+    }
+  }
+
+  //switches URL path to korean version of the site
+  switchToKorean(){
+    window.localStorage.setItem('lang', 'kr')
+    this.appService.currentURL = window.location.href;
+
+    if(this.appService.currentURL.includes("about")) {
+      this.chinesePath = "/kr/about";
+    }
+    else {
+      this.chinesePath = "/kr"
     }
   }
 
