@@ -116,7 +116,7 @@ p {
 .social-media-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .social-media-row a {
@@ -124,6 +124,7 @@ p {
     margin-left: 5px;
     border: #000 2px solid;
     padding: 15px;
+    margin-bottom: 10px;
     transition-duration: .5s;
 }
 .social-media-row a:hover {
