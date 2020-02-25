@@ -116,7 +116,8 @@ p {
 .social-media-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
+
 }
 
 .social-media-row a {
