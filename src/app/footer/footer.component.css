@@ -116,7 +116,7 @@ p {
 .social-media-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: left;
 
 }
 
