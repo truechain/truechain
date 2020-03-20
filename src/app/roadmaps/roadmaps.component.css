@@ -151,7 +151,11 @@
     margin: auto;
     color: #fff;
 }
-
+.great-btn {
+  clear: both;
+  margin-top: 100px;
+  text-align: center;
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media (max-width: 1199px) {
