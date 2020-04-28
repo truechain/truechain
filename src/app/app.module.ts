@@ -19,6 +19,7 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { CountUpModule } from 'countup.js-angular2';
 import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { DownloadComponent } from './download/download.component';
+import { DownComponent } from './down/down.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
@@ -39,7 +40,10 @@ const appRoutes: Routes = [
   {path: 'kr', component: MainComponent},
   {path: 'about', component: AboutComponent},
   {path: 'cn/about', component: AboutComponent},
-  {path: 'kr/about', component: AboutComponent}
+  {path: 'kr/about', component: AboutComponent},
+  {path: 'down', component: DownComponent},
+  {path: 'cn/down', component: DownComponent},
+  {path: 'kr/down', component: DownComponent}
 ];
 
 @NgModule({
@@ -59,6 +63,7 @@ const appRoutes: Routes = [
     PartnersComponent,
     CaseStudiesComponent,
     DownloadComponent,
+    DownComponent,
     ContactComponent,
     IndustryComponent,
     MainComponent,

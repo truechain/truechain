@@ -6,20 +6,48 @@
                     <h2 *ngIf="english">Download TrueChain's Light Wallet App</h2>
                     <h2 *ngIf="chinese">下载轻钱包（Light Wallet）应用程序</h2>
                     <h2 *ngIf="korean">TrueChain's Light Wallet 앱 다운로드</h2>
-                    <div class="download-buttons">
-                        <a href="https://dapp.truedapp.net/appdown/" target="_blank" class="app-button">
+                    <div *ngIf="english" class="download-buttons">
+                        <a href="/down" target="_blank" class="app-button">
                             <button class="btn btn-secondary btn-lg">
                                 <i class="fab fa-apple fa-2x"></i>
                                 <span>iOS</span>
                             </button>
                         </a>
-                        <a href="https://dapp.truedapp.net/appdown/" target="_blank" class="app-button">
+                        <a href="/down" target="_blank" class="app-button">
                             <button class="btn btn-secondary btn-lg">
                                 <i class="fab fa-android fa-2x"></i>
                                 <span>Android</span>
                             </button>
                         </a>
                     </div>
+                  <div *ngIf="chinese" class="download-buttons">
+                    <a href="/cn/down" target="_blank" class="app-button">
+                      <button class="btn btn-secondary btn-lg">
+                        <i class="fab fa-apple fa-2x"></i>
+                        <span>iOS</span>
+                      </button>
+                    </a>
+                    <a href="/cn/down" target="_blank" class="app-button">
+                      <button class="btn btn-secondary btn-lg">
+                        <i class="fab fa-android fa-2x"></i>
+                        <span>Android</span>
+                      </button>
+                    </a>
+                  </div>
+                  <div *ngIf="korean" class="download-buttons">
+                    <a href="/kr/down" target="_blank" class="app-button">
+                      <button class="btn btn-secondary btn-lg">
+                        <i class="fab fa-apple fa-2x"></i>
+                        <span>iOS</span>
+                      </button>
+                    </a>
+                    <a href="/kr/down" target="_blank" class="app-button">
+                      <button class="btn btn-secondary btn-lg">
+                        <i class="fab fa-android fa-2x"></i>
+                        <span>Android</span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
             </div>
         </div>

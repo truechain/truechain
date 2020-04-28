@@ -1,0 +1,129 @@
+/* about-hero styles */
+
+/* general section styles */
+.about-hero-section {
+  height: 100vh;
+  background: #e9e9e9 center no-repeat;
+  text-align: Left;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) ), url("/assets/images/hamoud-digital-about-hero-background.jpg"); */
+  background-color: #203260;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 810px !important;
+}
+
+/* wrap styles */
+.about-hero-wrap {
+  height: inherit;
+  width: inherit;
+  height: 100%;
+}
+
+
+/* underlying particle background styles */
+#particles.js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* about-hero content styles */
+.content-wrap {
+  position: absolute;
+  top: 35%;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-hero-content {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.about-hero-content img {
+  max-width: 200px;
+  pointer-events: none;
+}
+h1, p {
+  color: #fff;
+  position: relative;
+}
+h1 {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+p {
+  max-width: 400px;
+  font-size: 25px;
+}
+.btn-lg {
+  margin-top: 30px;
+  border-width: 2px;
+  border-color: #000;
+}
+.btn-lg:hover {
+  border-color: #fff;
+}
+
+/* about-hero Video Styles */
+
+.col-lg-7 {
+  width: 100% !important;
+}
+
+.about-hero-video {
+  float: right;
+  max-width: 750px;
+  width: 100% !important;
+}
+.about-hero-video video{
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 15px #000;
+}
+
+/* Mobile responsiveness */
+@media(max-width: 991px) {
+  .about-hero-section {
+    height: auto;
+    overflow: visible;
+    padding-bottom: 60px;
+  }
+  .content-wrap {
+    top: 180px;
+  }
+}
+
+@media(max-width: 767px) {
+  .content-wrap {
+    top: 160px;
+  }
+}
+
+
+@media(max-width: 360px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+
+.download-title{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.download-icon{
+  margin-right: 10px;
+}

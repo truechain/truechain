@@ -17,6 +17,15 @@ export class AppService {
   //Determines if the website is korean
   public korean: boolean = false;
 
+  public isios: boolean = false;
+
+
+  public isand: boolean = false;
+
+  public isweb: boolean = false;
+
+
+
   // Elements that correlate to sections //
   public homeElement: ElementRef;
   public whatElement: ElementRef;
@@ -27,8 +36,9 @@ export class AppService {
   public roadmapElement: ElementRef;
   public partnersElement: ElementRef;
   public downloadElement: ElementRef;
+  public downElement: ElementRef;
 
-  // Offsets for the elements compared to the top of the page 
+  // Offsets for the elements compared to the top of the page
   public currentActive: number = 0;
   public homeOffset: number = null;
   public whatOffset: number = null;
@@ -39,6 +49,7 @@ export class AppService {
   public roadmapOffset: number = null;
   public partnersOffset: number = null;
   public downloadOffset: number = null;
+  public downOffset: number = null;
 
   constructor() { }
 
@@ -53,6 +64,7 @@ export class AppService {
     this.roadmapOffset = this.roadmapElement.nativeElement.offsetTop - 99;
     this.partnersOffset = this.partnersElement.nativeElement.offsetTop - 99;
     this.downloadOffset = this.downloadElement.nativeElement.offsetTop + 360;
+    this.downOffset = this.downElement.nativeElement.offsetTop - 99;
   }
 
   // resets the offsets to 0
@@ -66,6 +78,7 @@ export class AppService {
     this.roadmapOffset = 0;
     this.partnersOffset = 0;
     this.downloadOffset = 0;
+    this.downOffset = 0;
   }
 
   //gets Current URL path
@@ -97,8 +110,19 @@ export class AppService {
       this.chinese = false;
       this.korean = false;
     }
+
+    const u = window.navigator.appVersion;
+    const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+    const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    if (isAndroid && !isiOS) {
+      this.isand = true;
+    } else if (isiOS && !isAndroid) {
+      this.isios = true;
+    } else {
+      this.isweb = true;
+    }
   }
 
 
-  
+
 }
