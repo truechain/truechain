@@ -20,47 +20,51 @@
         <div class="download-title" *ngIf="chinese">简单、安全、有趣的区块链钱包</div>
         <div class="download-title" *ngIf="korean">Simple, Safe and Interesting Blockchain Wallet</div>
         <div class="about-hero-content">
-          <a *ngIf="isand"  [@enterButton] target="_blank" href="https://qiniu.truescan.network/app/true.apk"><button class="btn btn-primary btn-lg">
+          <a *ngIf="isand"  onclick="window.open('https://qiniu.truescan.network/app/true.apk')"><button class="btn btn-primary btn-lg">
             <img class="download-icon" src="../../assets/icon/android.svg" alt="">
             <span  *ngIf="english">Download</span>
             <span  *ngIf="chinese">安卓下载</span>
             <span  *ngIf="korean">Download</span>
           </button></a><br>
-          <a *ngIf="isand" [@enterButton] target="_blank" href="https://play.google.com/store/apps/details?id=com.truewallet"><button class="btn btn-primary btn-lg">
+          <a *ngIf="isand" onclick="window.open('https://play.google.com/store/apps/details?id=com.truewallet')" ><button class="btn btn-primary btn-lg">
             <img class="download-icon" src="../../assets/icon/google-play.svg" alt="">
             <span  *ngIf="english">Google Play Download</span>
             <span  *ngIf="chinese">Google Play 下载</span>
             <span  *ngIf="korean">Google Play Download</span>
           </button></a><br>
-          <a *ngIf="isios" [@enterButton] target="_blank" href="https://testflight.apple.com/join/bwvKiO5a"><button class="btn btn-primary btn-lg">
+          <a *ngIf="isios" onclick="window.open('https://testflight.apple.com/join/bwvKiO5a')"><button class="btn btn-primary btn-lg">
             <img class="download-icon" src="../../assets/icon/ios.svg" alt="">
             <span  *ngIf="english">iPhone Download</span>
             <span  *ngIf="chinese">iPhone版本下载</span>
             <span  *ngIf="korean">iPhone Download</span>
           </button></a>
-
-          <a *ngIf="isweb"  [@enterButton] target="_blank" href="https://qiniu.truescan.network/app/true.apk"><button class="btn btn-primary btn-lg">
+          <a *ngIf="isweb" onclick="window.open('https://qiniu.truescan.network/app/true.apk')" ><div class="btn btn-primary btn-lg">
             <img class="download-icon" src="../../assets/icon/android.svg" alt="">
             <span  *ngIf="english">Download</span>
             <span  *ngIf="chinese">安卓下载</span>
             <span  *ngIf="korean">Download</span>
-          </button></a><br>
-          <a *ngIf="isweb" [@enterButton] target="_blank" href="https://play.google.com/store/apps/details?id=com.truewallet"><button class="btn btn-primary btn-lg">
+          </div></a><br>
+          <a *ngIf="isweb" onclick="window.open('https://play.google.com/store/apps/details?id=com.truewallet')" ><div class="btn btn-primary btn-lg">
             <img class="download-icon" src="../../assets/icon/google-play.svg" alt="">
             <span  *ngIf="english">Google Play Download</span>
             <span  *ngIf="chinese">Google Play 下载</span>
             <span  *ngIf="korean">Google Play Download</span>
-          </button></a><br>
-          <a *ngIf="isweb" [@enterButton] target="_blank" href="https://testflight.apple.com/join/bwvKiO5a"><button class="btn btn-primary btn-lg">
+          </div></a><br>
+          <a *ngIf="isweb" onclick="window.open('https://testflight.apple.com/join/bwvKiO5a')"><div class="btn btn-primary btn-lg">
             <img class="download-icon" src="../../assets/icon/ios.svg" alt="">
             <span  *ngIf="english">iPhone Download</span>
             <span  *ngIf="chinese">iPhone版本下载</span>
             <span  *ngIf="korean">iPhone Download</span>
-          </button></a>
+          </div></a>
 
 
         </div>
       </div>
     </div>
   </div>
+  <script>
+    function aaa(){
+      alert(11111);
+    }
+  </script>
 </section>
