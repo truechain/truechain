@@ -64,7 +64,9 @@ export class AppService {
     this.roadmapOffset = this.roadmapElement.nativeElement.offsetTop - 99;
     this.partnersOffset = this.partnersElement.nativeElement.offsetTop - 99;
     this.downloadOffset = this.downloadElement.nativeElement.offsetTop + 360;
-    this.downOffset = this.downElement.nativeElement.offsetTop - 99;
+    if (this.downElement && this.downloadElement.nativeElement) {
+      this.downOffset = this.downElement.nativeElement.offsetTop - 99;
+    }
   }
 
   // resets the offsets to 0
