@@ -15,11 +15,11 @@ export class AppComponent implements OnInit {
     const lang = window.localStorage.getItem('lang')
     const locationHref = window.location.href
     switch (lang) {
-      case 'cn':
-        if (!locationHref.includes(lang)) {
-          window.location.href = '/cn'
-        }
-        break;
+      // case 'cn':
+      //   if (!locationHref.includes(lang)) {
+      //     window.location.href = '/cn'
+      //   }
+      //   break;
       case 'en':
         if (locationHref.includes('cn')) {
           window.location.href = '/'
