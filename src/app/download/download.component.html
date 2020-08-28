@@ -7,20 +7,39 @@
                     <h2 *ngIf="chinese">下载轻钱包（Light Wallet）应用程序</h2>
                     <h2 *ngIf="korean">TrueChain's Light Wallet 앱 다운로드</h2>
                     <div *ngIf="english" class="download-buttons">
+                      <a href="https://www.bitkeep.com/" target="_blank" class="app-button">
+                        <div class="download-bk">
+                          <button class="btn  btn-secondary btn-lg">
+                            <div class="download-bkicon"></div>
+<!--                            <img  (mouseover)="this.src='../../assets/icon/bitkeep-white.png'"  class="download-bkicon" src="../../assets/icon/bitkeep-black.png">-->
+                            <span >BitKeep</span>
+                          </button>
+                        </div>
+                      </a>
                         <a href="/down" target="_blank" class="app-button">
                             <button class="btn btn-secondary btn-lg">
+                              <div>
                                 <i class="fab fa-apple fa-2x"></i>
                                 <span>iOS</span>
+                              </div>
                             </button>
                         </a>
-                        <a href="/down" target="_blank" class="app-button">
-                            <button class="btn btn-secondary btn-lg">
-                                <i class="fab fa-android fa-2x"></i>
-                                <span>Android</span>
-                            </button>
-                        </a>
+                      <a href="/down" target="_blank" class="app-button">
+                        <button class="btn btn-secondary btn-lg">
+                          <div>
+                            <i class="fab fa-android fa-2x"></i>
+                            <span>Android</span>
+                          </div>
+                        </button>
+                      </a>
                     </div>
                   <div *ngIf="chinese" class="download-buttons">
+                    <a href="https://www.bitkeep.com/" target="_blank" class="app-button">
+                      <button class="btn btn-secondary btn-lg">
+                        <div class="download-bkicon"></div>
+                        <span>BitKeep</span>
+                      </button>
+                    </a>
                     <a href="/cn/down" target="_blank" class="app-button">
                       <button class="btn btn-secondary btn-lg">
                         <i class="fab fa-apple fa-2x"></i>
@@ -35,6 +54,12 @@
                     </a>
                   </div>
                   <div *ngIf="korean" class="download-buttons">
+                    <a href="https://www.bitkeep.com/" target="_blank" class="app-button">
+                      <button class="btn btn-secondary btn-lg">
+                        <div class="download-bkicon"></div>
+                        <span>BitKeep</span>
+                      </button>
+                    </a>
                     <a href="/kr/down" target="_blank" class="app-button">
                       <button class="btn btn-secondary btn-lg">
                         <i class="fab fa-apple fa-2x"></i>
