@@ -69,7 +69,7 @@ export class StatsComponent implements OnInit, AfterViewInit{
       this.statTwoValChinese = 2000;
       this.statThreeValChinese = 25;
 
-      this.statThreeValKorean = 2;
-    } 
+      this.statThreeValKorean = 2000;
+    }
   }
 }
